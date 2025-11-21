@@ -1,0 +1,340 @@
+{
+  "nodes": [
+    {
+      "id": "chicken-house",
+      "name": "Chicken House",
+      "type": "component",
+      "position": "left"
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing Plant",
+      "type": "component",
+      "position": "top"
+    },
+    {
+      "id": "farm",
+      "name": "Farm / Crops",
+      "type": "component",
+      "position": "bottom"
+    },
+    {
+      "id": "landfill",
+      "name": "Landfill",
+      "type": "waste",
+      "position": "right"
+    },
+    {
+      "id": "fresh-pine-shavings",
+      "name": "Fresh Pine Shavings",
+      "type": "input",
+      "icon": "fresh-pine-shavings"
+    },
+    {
+      "id": "chicken-feed-input",
+      "name": "Chicken Feed",
+      "type": "input",
+      "icon": "chicken-feed"
+    },
+    {
+      "id": "fossil-fuels",
+      "name": "Fossil Fuels",
+      "type": "input",
+      "icon": "fossil-fuel"
+    },
+    {
+      "id": "electricity-input",
+      "name": "Electricity",
+      "type": "input",
+      "icon": "fossil-fuel"
+    },
+    {
+      "id": "chemical-fertilizers",
+      "name": "Chemical Fertilizers",
+      "type": "input",
+      "icon": "fertilizer"
+    },
+    {
+      "id": "diesel",
+      "name": "Diesel",
+      "type": "input",
+      "icon": "diesel"
+    },
+    {
+      "id": "labor-farm",
+      "name": "Labor",
+      "type": "input",
+      "icon": "labor"
+    },
+    {
+      "id": "live-chickens",
+      "name": "Live Chickens",
+      "type": "intermediate",
+      "icon": "live-chickens"
+    },
+    {
+      "id": "dead-chickens",
+      "name": "Dead Chickens",
+      "type": "intermediate",
+      "icon": "dead-chickens"
+    },
+    {
+      "id": "used-litter",
+      "name": "Used Poultry Litter",
+      "type": "intermediate",
+      "icon": "used-poultry-litter"
+    },
+    {
+      "id": "fog-waste",
+      "name": "FOG Waste",
+      "type": "intermediate",
+      "icon": "offal-fog"
+    },
+    {
+      "id": "meat",
+      "name": "Meat",
+      "type": "output",
+      "icon": "meat"
+    },
+    {
+      "id": "crops",
+      "name": "Crops",
+      "type": "output",
+      "icon": "crops"
+    },
+    {
+      "id": "water-input",
+      "name": "Water",
+      "type": "input",
+      "icon": "water"
+    },
+    {
+      "id": "liquid-co2",
+      "name": "Liquefied CO₂",
+      "type": "input",
+      "icon": "co2"
+    },
+    {
+      "id": "ammonia-emissions",
+      "name": "Ammonia Emissions",
+      "type": "waste",
+      "icon": "waste"
+    },
+    {
+      "id": "ghg-emissions-chicken",
+      "name": "GHG Emissions (Chicken House)",
+      "type": "waste",
+      "icon": "waste"
+    },
+    {
+      "id": "ghg-emissions",
+      "name": "GHG Emissions",
+      "type": "waste",
+      "icon": "waste"
+    },
+    {
+      "id": "water-pollution",
+      "name": "Water Pollution",
+      "type": "waste",
+      "icon": "waste"
+    },
+    {
+      "id": "fertilizer-losses",
+      "name": "Fertilizer Winter Losses",
+      "type": "waste",
+      "icon": "waste"
+    }
+  ],
+  "flows": [
+    {
+      "source": "fresh-pine-shavings",
+      "target": "chicken-house",
+      "type": "material",
+      "label": "Fresh Pine Shavings",
+      "value": 100
+    },
+    {
+      "source": "chicken-feed-input",
+      "target": "chicken-house",
+      "type": "material",
+      "label": "Chicken Feed",
+      "value": 150
+    },
+    {
+      "source": "fossil-fuels",
+      "target": "chicken-house",
+      "type": "energy",
+      "label": "Fossil Fuels (Heating)",
+      "value": 30
+    },
+    {
+      "source": "water-input",
+      "target": "chicken-house",
+      "type": "material",
+      "label": "Water",
+      "value": 20
+    },
+    {
+      "source": "chicken-house",
+      "target": "live-chickens",
+      "type": "material",
+      "label": "Live Chickens",
+      "value": 200
+    },
+    {
+      "source": "chicken-house",
+      "target": "dead-chickens",
+      "type": "material",
+      "label": "Dead Chickens",
+      "value": 10
+    },
+    {
+      "source": "chicken-house",
+      "target": "used-litter",
+      "type": "manure",
+      "label": "Used Poultry Litter",
+      "value": 80
+    },
+    {
+      "source": "chicken-house",
+      "target": "ammonia-emissions",
+      "type": "waste",
+      "label": "Ammonia Emissions",
+      "value": 15
+    },
+    {
+      "source": "chicken-house",
+      "target": "ghg-emissions-chicken",
+      "type": "waste",
+      "label": "GHG Emissions",
+      "value": 25
+    },
+    {
+      "source": "live-chickens",
+      "target": "processing-plant",
+      "type": "material",
+      "label": "Chickens to Processing",
+      "value": 200
+    },
+    {
+      "source": "fossil-fuels",
+      "target": "processing-plant",
+      "type": "energy",
+      "label": "Fossil Fuels",
+      "value": 100
+    },
+    {
+      "source": "electricity-input",
+      "target": "processing-plant",
+      "type": "energy",
+      "label": "Electricity",
+      "value": 50
+    },
+    {
+      "source": "liquid-co2",
+      "target": "processing-plant",
+      "type": "material",
+      "label": "Liquefied CO₂",
+      "value": 30
+    },
+    {
+      "source": "processing-plant",
+      "target": "meat",
+      "type": "material",
+      "label": "Meat Products",
+      "value": 150
+    },
+    {
+      "source": "processing-plant",
+      "target": "fog-waste",
+      "type": "material",
+      "label": "FOG Waste",
+      "value": 50
+    },
+    {
+      "source": "processing-plant",
+      "target": "ghg-emissions",
+      "type": "waste",
+      "label": "GHG Emissions",
+      "value": 80
+    },
+    {
+      "source": "fog-waste",
+      "target": "landfill",
+      "type": "waste",
+      "label": "FOG to Landfill",
+      "value": 50
+    },
+    {
+      "source": "dead-chickens",
+      "target": "landfill",
+      "type": "waste",
+      "label": "Dead Chickens to Landfill",
+      "value": 10
+    },
+    {
+      "source": "used-litter",
+      "target": "farm",
+      "type": "material",
+      "label": "Raw Litter to Farm",
+      "value": 40
+    },
+    {
+      "source": "used-litter",
+      "target": "landfill",
+      "type": "waste",
+      "label": "Excess Litter to Landfill",
+      "value": 40
+    },
+    {
+      "source": "chemical-fertilizers",
+      "target": "farm",
+      "type": "material",
+      "label": "Chemical Fertilizers",
+      "value": 60
+    },
+    {
+      "source": "diesel",
+      "target": "farm",
+      "type": "energy",
+      "label": "Diesel",
+      "value": 30
+    },
+    {
+      "source": "labor-farm",
+      "target": "farm",
+      "type": "input",
+      "label": "Labor",
+      "value": 15
+    },
+    {
+      "source": "farm",
+      "target": "crops",
+      "type": "material",
+      "label": "Crop Production",
+      "value": 100
+    },
+    {
+      "source": "farm",
+      "target": "water-pollution",
+      "type": "waste",
+      "label": "Water/GHG/Nitrogen Losses",
+      "value": 60
+    },
+    {
+      "source": "farm",
+      "target": "fertilizer-losses",
+      "type": "waste",
+      "label": "Fertilizer Winter Losses",
+      "value": 30
+    },
+    {
+      "source": "crops",
+      "target": "chicken-feed-input",
+      "type": "material",
+      "label": "Crops to Feed (circular)",
+      "value": 50,
+      "circular": true
+    }
+  ]
+}

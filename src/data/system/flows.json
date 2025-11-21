@@ -1,0 +1,92 @@
+{
+  "flows": [
+    {
+      "from": "co2-input",
+      "to": "processing-plant",
+      "type": "gas",
+      "label": "CO2 Gas",
+      "current": true,
+      "proposed": true
+    },
+    {
+      "from": "chicken-house",
+      "to": "processing-plant",
+      "type": "manure",
+      "label": "Poultry Litter",
+      "current": true,
+      "proposed": true
+    },
+    {
+      "from": "processing-plant",
+      "to": "anaerobic-digester",
+      "type": "manure",
+      "label": "50-70% to Digester",
+      "current": false,
+      "proposed": true
+    },
+    {
+      "from": "processing-plant",
+      "to": "pyrolysis-unit",
+      "type": "manure",
+      "label": "30-50% to Pyrolysis",
+      "current": false,
+      "proposed": true
+    },
+    {
+      "from": "pyrolysis-unit",
+      "to": "anaerobic-digester",
+      "type": "gas",
+      "label": "Syngas Enhancement",
+      "current": false,
+      "proposed": true
+    },
+    {
+      "from": "pyrolysis-unit",
+      "to": "anaerobic-digester",
+      "type": "biochar",
+      "label": "Biochar Addition (5-20 g/L)",
+      "current": false,
+      "proposed": true
+    },
+    {
+      "from": "pyrolysis-unit",
+      "to": "chicken-house",
+      "type": "biochar",
+      "label": "Biochar Bedding",
+      "current": false,
+      "proposed": true
+    },
+    {
+      "from": "pyrolysis-unit",
+      "to": "farm-waterways",
+      "type": "biochar",
+      "label": "Biochar Soil Amendment",
+      "current": false,
+      "proposed": true
+    },
+    {
+      "from": "anaerobic-digester",
+      "to": "farm-waterways",
+      "type": "material",
+      "label": "Digestate Fertilizer",
+      "current": false,
+      "proposed": true
+    },
+    {
+      "from": "anaerobic-digester",
+      "to": "processing-plant",
+      "type": "energy",
+      "label": "Renewable Natural Gas",
+      "current": false,
+      "proposed": true
+    },
+    {
+      "from": "pyrolysis-unit",
+      "to": "processing-plant",
+      "type": "energy",
+      "label": "Heat & Power",
+      "current": false,
+      "proposed": true
+    }
+  ]
+}

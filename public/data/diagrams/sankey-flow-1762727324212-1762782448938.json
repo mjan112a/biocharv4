@@ -1,0 +1,493 @@
+{
+  "nodes": [
+    {
+      "id": "fresh-pine-shavings",
+      "name": "Fresh Pine Shavings",
+      "x": 50,
+      "y": 200,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "labor-input",
+      "name": "Labor",
+      "x": 50,
+      "y": 300,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "chicken-house",
+      "name": "Chicken House",
+      "x": 200,
+      "y": 315.033003577487,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/chicken-house.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fossil-fuels",
+      "name": "Fossil Fuels",
+      "x": 134.8006019563581,
+      "y": 40,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing Plant",
+      "x": 407.8630549285176,
+      "y": 189.0198021464922,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/processing-plant.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "meat-products",
+      "name": "Meat Products",
+      "x": 737.6975169300226,
+      "y": 40,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/chicken-meat.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "electricity-output",
+      "name": "Power",
+      "x": 674.4920993227992,
+      "y": 231.3340835418801,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/energy/syngas-energy.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "anaerobic-digester",
+      "name": "Anaerobic Digester",
+      "x": 450,
+      "y": 350,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/anaerobic-digester.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "bio-methane-pipeline",
+      "name": "Bio-methane Pipeline",
+      "x": 600,
+      "y": 300,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/energy/bio-methane.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "pyrolysis-system",
+      "name": "Pyrolysis System",
+      "x": 450,
+      "y": 550,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/pyrolysis-unit.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "biochar-product",
+      "name": "Biochar",
+      "x": 250,
+      "y": 500,
+      "type": "output",
+      "width": 90,
+      "height": 90,
+      "icon": "/images/system-icons/outputs/biochar.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "syngas-energy",
+      "name": "Syngas Energy",
+      "x": 755.7562076749435,
+      "y": 514.527452594098,
+      "type": "energy",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/energy/syngas-energy.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "diesel-input",
+      "name": "Diesel",
+      "x": 56.77200902934537,
+      "y": 752.6176119854214,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/energy/renewable-biofuels-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fertilizers-input",
+      "name": "Fertilizers",
+      "x": 71.82091798344621,
+      "y": 857.9384940963066,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/fertilizer.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "farm-waterway",
+      "name": "Farm/Waterway",
+      "x": 250,
+      "y": 750,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/farm-waterways.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "crops-output",
+      "name": "Crops",
+      "x": 450,
+      "y": 800,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/crops-corn.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "co2-emissions",
+      "name": "CO2 Emissions",
+      "x": 750,
+      "y": 150,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "ghg-emissions",
+      "name": "GHG Emissions",
+      "x": 750,
+      "y": 300,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "nitrogen-losses",
+      "name": "Nitrogen Losses",
+      "x": 750,
+      "y": 400,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "ghg-reduction",
+      "name": "GHG Reduction",
+      "x": 52.59593679458237,
+      "y": 518.0747073346881,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/outputs/biochar.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "p-runoff-reduction",
+      "name": "P Runoff Reduction",
+      "x": 60.12039127163281,
+      "y": 636.402190161071,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/outputs/water.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "pine-to-house",
+      "source": "fresh-pine-shavings",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Bedding",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "labor-to-house",
+      "source": "labor-input",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Operations",
+      "type": "support",
+      "animated": false
+    },
+    {
+      "id": "biochar-to-house",
+      "source": "biochar-product",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Recycled Biochar",
+      "type": "material",
+      "animated": true,
+      "returnConnector": true,
+      "returnYOffset": 100
+    },
+    {
+      "id": "house-to-processing",
+      "source": "chicken-house",
+      "target": "processing-plant",
+      "value": 5,
+      "label": "Live Chickens",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "house-to-ad-litter",
+      "source": "chicken-house",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "Litter + Char",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "house-to-ad-dead",
+      "source": "chicken-house",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "Dead Chickens",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "fossil-to-processing",
+      "source": "fossil-fuels",
+      "target": "processing-plant",
+      "value": 5,
+      "label": "Energy",
+      "type": "energy",
+      "animated": false
+    },
+    {
+      "id": "processing-to-meat",
+      "source": "processing-plant",
+      "target": "meat-products",
+      "value": 5,
+      "label": "Meat",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "processing-to-power",
+      "source": "processing-plant",
+      "target": "electricity-output",
+      "value": 5,
+      "label": "Electricity",
+      "type": "energy",
+      "animated": true
+    },
+    {
+      "id": "processing-to-ad-fog",
+      "source": "processing-plant",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "DAF FOG",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "processing-to-ad-waste",
+      "source": "processing-plant",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "Other Waste",
+      "type": "waste",
+      "animated": true,
+      "returnY": 530
+    },
+    {
+      "id": "processing-to-co2",
+      "source": "processing-plant",
+      "target": "co2-emissions",
+      "value": 5,
+      "label": "CO2",
+      "type": "emission",
+      "animated": false
+    },
+    {
+      "id": "ad-to-pipeline",
+      "source": "anaerobic-digester",
+      "target": "bio-methane-pipeline",
+      "value": 5,
+      "label": "Pipeline Gas",
+      "type": "energy",
+      "animated": true
+    },
+    {
+      "id": "ad-to-pyrolysis",
+      "source": "anaerobic-digester",
+      "target": "pyrolysis-system",
+      "value": 5,
+      "label": "Solid Digestate",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "ad-to-farm-liquid",
+      "source": "anaerobic-digester",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "Liquid Digestate",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "ad-to-ghg",
+      "source": "anaerobic-digester",
+      "target": "ghg-emissions",
+      "value": 5,
+      "label": "GHG",
+      "type": "emission",
+      "animated": false
+    },
+    {
+      "id": "ad-to-nitrogen",
+      "source": "anaerobic-digester",
+      "target": "nitrogen-losses",
+      "value": 5,
+      "label": "Nitrogen",
+      "type": "emission",
+      "animated": false
+    },
+    {
+      "id": "pyrolysis-to-biochar",
+      "source": "pyrolysis-system",
+      "target": "biochar-product",
+      "value": 5,
+      "label": "Biochar",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "pyrolysis-to-syngas",
+      "source": "pyrolysis-system",
+      "target": "syngas-energy",
+      "value": 5,
+      "label": "Syngas",
+      "type": "energy",
+      "animated": true
+    },
+    {
+      "id": "pyrolysis-to-farm",
+      "source": "pyrolysis-system",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "Decant Liquid",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "biochar-to-ghg-reduction",
+      "source": "biochar-product",
+      "target": "ghg-reduction",
+      "value": 5,
+      "label": "Carbon Sequestration",
+      "type": "benefit",
+      "animated": false
+    },
+    {
+      "id": "biochar-to-p-reduction",
+      "source": "biochar-product",
+      "target": "p-runoff-reduction",
+      "value": 5,
+      "label": "P Control",
+      "type": "benefit",
+      "animated": false
+    },
+    {
+      "id": "diesel-to-farm",
+      "source": "diesel-input",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "Equipment Fuel",
+      "type": "energy",
+      "animated": false
+    },
+    {
+      "id": "fertilizers-to-farm",
+      "source": "fertilizers-input",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "Chemicals",
+      "type": "material",
+      "animated": false
+    },
+    {
+      "id": "farm-to-crops",
+      "source": "farm-waterway",
+      "target": "crops-output",
+      "value": 5,
+      "label": "Agricultural Production",
+      "type": "material",
+      "animated": true
+    }
+  ],
+  "config": {
+    "width": 1000,
+    "height": 1100,
+    "nodePadding": 20,
+    "nodeWidth": 80,
+    "circularLinkGap": 20
+  }
+}

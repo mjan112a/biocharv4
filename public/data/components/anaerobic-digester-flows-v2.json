@@ -1,0 +1,232 @@
+{
+  "component": {
+    "id": "anaerobic-digester",
+    "name": "Anaerobic Digester",
+    "icon": "anaerobic-digester",
+    "description": "Processes organic waste through anaerobic digestion to produce biogas and digestate",
+    "specs": {
+      "retentionTime": "20-30 days",
+      "temperature": "35-40°C",
+      "biogasYield": "0.5 m³/kg VS",
+      "vsDestruction": "60-70%",
+      "pathogenReduction": "99.9%"
+    }
+  },
+  "current": {
+    "inputs": [
+      {
+        "id": "waste-to-landfill",
+        "name": "Waste to Landfill",
+        "icon": "waste",
+        "value": 140,
+        "unit": "kg/day",
+        "source": "chicken-house & processing-plant",
+        "tooltip": {
+          "description": "All organic waste disposed in landfill",
+          "impacts": [
+            "Methane emissions from decomposition",
+            "Landfill space consumption",
+            "Lost nutrient recycling opportunity",
+            "No energy recovery"
+          ],
+          "costs": "$15/day disposal fees"
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "environmental-pollution",
+        "name": "Environmental Pollution",
+        "icon": "waste",
+        "value": 100,
+        "unit": "%",
+        "destination": "atmosphere & soil",
+        "type": "negative",
+        "tooltip": {
+          "description": "Pollution from unprocessed waste",
+          "impacts": [
+            "GHG emissions: 420 kg CO₂-eq/day",
+            "Groundwater contamination risk",
+            "Odor nuisance",
+            "Pathogen spread"
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "energyProduction": 0,
+      "wasteProcessed": 0,
+      "ghgEmissions": 420,
+      "costPerDay": 15
+    }
+  },
+  "proposed": {
+    "inputs": [
+      {
+        "id": "litter-char-input",
+        "name": "Litter & Char",
+        "icon": "litter-char",
+        "value": 80,
+        "unit": "kg/day",
+        "source": "chicken-house",
+        "new": true,
+        "tooltip": {
+          "description": "Used poultry litter mixed with biochar from previous cycles",
+          "properties": {
+            "C:N ratio": "25:1",
+            "Moisture": "60%",
+            "VS content": "70%"
+          },
+          "benefits": [
+            "High methane potential",
+            "Biochar improves digestion",
+            "Reduces ammonia emissions",
+            "Sequesters carbon"
+          ]
+        }
+      },
+      {
+        "id": "dead-chickens-input",
+        "name": "Dead Chickens",
+        "icon": "dead-chickens",
+        "value": 10,
+        "unit": "kg/day",
+        "source": "chicken-house",
+        "new": true,
+        "tooltip": {
+          "description": "Mortality from chicken operations",
+          "properties": {
+            "Protein content": "High",
+            "VS content": "85%",
+            "C:N ratio": "5:1"
+          },
+          "benefits": [
+            "High biogas yield",
+            "Pathogen destruction",
+            "Biosecurity compliance",
+            "Nutrient recovery"
+          ]
+        }
+      },
+      {
+        "id": "offal-fog-input",
+        "name": "Offal / FOG",
+        "icon": "offal-fog",
+        "value": 50,
+        "unit": "kg/day",
+        "source": "processing-plant",
+        "new": true,
+        "tooltip": {
+          "description": "Fats, oils, greases and offal from processing",
+          "properties": {
+            "Lipid content": "40%",
+            "VS content": "90%",
+            "Energy density": "High"
+          },
+          "benefits": [
+            "Highest methane yield",
+            "Co-digestion synergy",
+            "Prevents drain clogs",
+            "Waste valorization"
+          ]
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "bio-methane-output",
+        "name": "Bio Methane",
+        "icon": "bio-methane",
+        "value": 40,
+        "unit": "m³/day",
+        "destination": "processing-plant",
+        "type": "energy",
+        "new": true,
+        "tooltip": {
+          "description": "Renewable biogas produced from anaerobic digestion",
+          "properties": {
+            "Energy content": "22 MJ/m³",
+            "Methane": "60-70%",
+            "Total energy": "880 MJ/day"
+          },
+          "benefits": [
+            "Replaces 32 kg fossil fuel/day",
+            "Reduces CO₂: 96 kg/day",
+            "Renewable energy source",
+            "Energy independence"
+          ],
+          "economics": {
+            "value": "$12/day",
+            "annual": "$4,380",
+            "payback": "Contributes to 3-year ROI"
+          }
+        }
+      },
+      {
+        "id": "digestate-liquids-output",
+        "name": "Digestate Liquids",
+        "icon": "digestate-liquids",
+        "value": 50,
+        "unit": "L/day",
+        "destination": "land-applied",
+        "new": true,
+        "tooltip": {
+          "description": "Liquid fraction nutrient-rich fertilizer",
+          "properties": {
+            "N content": "2-4%",
+            "P content": "0.5-1%",
+            "K content": "3-5%",
+            "pH": "7.5-8.5"
+          },
+          "benefits": [
+            "Replaces chemical fertilizer",
+            "Improved soil health",
+            "Rapid nutrient availability",
+            "Reduced runoff"
+          ],
+          "economics": {
+            "value": "$8/day",
+            "annual": "$2,920",
+            "fertilizer": "Replaces $5,000/year"
+          }
+        }
+      },
+      {
+        "id": "digestate-solids-output",
+        "name": "Digestate Solids",
+        "icon": "digestate-solids-reduced-volume",
+        "value": 50,
+        "unit": "kg/day",
+        "destination": "pyrolysis-unit",
+        "new": true,
+        "tooltip": {
+          "description": "Solid fraction with reduced volume (60% reduction)",
+          "properties": {
+            "Volume reduction": "60%",
+            "Carbon content": "35%",
+            "Moisture": "20%",
+            "Pathogen-free": "Yes"
+          },
+          "benefits": [
+            "Further processing to biochar",
+            "Stabilized organic matter",
+            "No pathogens",
+            "Easy handling"
+          ]
+        }
+      }
+    ],
+    "summary": {
+      "energyProduction": 880,
+      "wasteProcessed": 140,
+      "ghgReduction": 516,
+      "revenuePerDay": 20,
+      "comparison": {
+        "energySavings": "880 MJ/day",
+        "emissionsReduced": "96 kg CO₂/day + avoided 420 kg",
+        "wasteDiverted": "100%",
+        "economicValue": "$35/day net benefit"
+      }
+    }
+  }
+}

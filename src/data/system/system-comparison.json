@@ -1,0 +1,332 @@
+{
+  "metadata": {
+    "title": "Comparison of Current Standard Practice vs. Proposed System",
+    "description": "Comprehensive comparison of traditional poultry waste management versus the proposed biochar circular economy system",
+    "lastUpdated": "2025-10-29"
+  },
+  "components": {
+    "chicken-house": {
+      "name": "Chicken House",
+      "order": 1,
+      "current": {
+        "actions": [
+          "Housing & Management",
+          "Chicken Growth"
+        ],
+        "inputs": [
+          "Chickens",
+          "Fresh Pine Shavings",
+          "Chicken Feed",
+          "Labor"
+        ],
+        "outputs": [
+          "Live Chickens",
+          "Dead Chickens",
+          "Used Poultry Litter"
+        ],
+        "impacts": {
+          "benefits": [],
+          "detriments": [
+            "Standard ammonia levels",
+            "Standard mortality rates",
+            "Basic litter quality"
+          ]
+        },
+        "financialImplications": "Standard operational costs"
+      },
+      "proposed": {
+        "actions": [
+          "Housing & Management",
+          "Chicken Growth"
+        ],
+        "inputs": [
+          "Chickens",
+          "Fresh Pine Shavings",
+          "Biochar",
+          "Chicken Feed",
+          "Labor"
+        ],
+        "outputs": [
+          "Live Chickens",
+          "Dead Chickens",
+          "Used Poultry Litter & Charged Biochar"
+        ],
+        "impacts": {
+          "benefits": [
+            "Better ammonia control",
+            "Better gut health",
+            "Improved mortality",
+            "Improved yield of birds",
+            "Biochar-infused poultry litter"
+          ],
+          "detriments": []
+        },
+        "financialImplications": "Improved profitability for the Operator"
+      }
+    },
+    "processing-plant": {
+      "name": "Processing Plant",
+      "order": 2,
+      "current": {
+        "actions": [
+          "Chicken Slaughter",
+          "Processing & Packaging",
+          "Waste Disposal"
+        ],
+        "inputs": [
+          "Live Chickens",
+          "Fossil Fuels",
+          "Electricity",
+          "CO2 Gas"
+        ],
+        "outputs": [
+          "Meat",
+          "FOG (Fats, Oils, Greases) to Landfill & Waste Water Treatment",
+          "Scope I and Scope II Emissions"
+        ],
+        "impacts": {
+          "benefits": [],
+          "detriments": [
+            "GHG Emissions",
+            "Waste to landfill"
+          ]
+        },
+        "financialImplications": "High operating costs from fossil fuel dependency"
+      },
+      "proposed": {
+        "actions": [
+          "Chicken Slaughter",
+          "Processing & Packaging",
+          "Waste Diversion"
+        ],
+        "inputs": [
+          "Live Chickens",
+          "Renewable Energy",
+          "CO2 Gas"
+        ],
+        "outputs": [
+          "Meat",
+          "FOG (Fats, Oils, Greases) to Anaerobic Digester",
+          "Reduced Scope I and Scope II Emissions"
+        ],
+        "impacts": {
+          "benefits": [
+            "Reduced GHG Emissions",
+            "Waste diverted from landfill",
+            "Renewable energy usage"
+          ],
+          "detriments": []
+        },
+        "financialImplications": "Lower operating costs and improved profitability"
+      }
+    },
+    "anaerobic-digester": {
+      "name": "Anaerobic Digester (AD)",
+      "order": 3,
+      "current": {
+        "actions": [
+          "Does not exist in current practice"
+        ],
+        "inputs": [],
+        "outputs": [],
+        "impacts": {
+          "benefits": [],
+          "detriments": [
+            "No waste-to-energy conversion",
+            "No nutrient recovery"
+          ]
+        },
+        "financialImplications": "Missed revenue opportunity"
+      },
+      "proposed": {
+        "actions": [
+          "Digestion Process",
+          "Renewable Bio Methane Production & Capture",
+          "Waste Reduction"
+        ],
+        "inputs": [
+          "Litter & Char",
+          "Potentially Dead Chickens (from Chicken House)",
+          "FOG (from Processing Plant)",
+          "Other Wastes"
+        ],
+        "outputs": [
+          "Digestate Liquids",
+          "Renewable Bio Methane (for Processing Plant, Electricity, Transportation fuel, or Gas Pipeline injection)",
+          "Reduced Volume Digestate (solids)",
+          "CO2 for Processing Plants"
+        ],
+        "impacts": {
+          "benefits": [
+            "Reduced volume of waste",
+            "Clean renewable energy production",
+            "Greenhouse gas emission reductions",
+            "Nutrient recovery"
+          ],
+          "detriments": []
+        },
+        "financialImplications": "Profitably generates revenue from outputs"
+      }
+    },
+    "pyrolysis-unit": {
+      "name": "Pyrolysis System",
+      "order": 4,
+      "current": {
+        "actions": [
+          "Does not exist in current practice"
+        ],
+        "inputs": [],
+        "outputs": [],
+        "impacts": {
+          "benefits": [],
+          "detriments": [
+            "No carbon sequestration",
+            "No biochar production",
+            "No renewable energy generation from biomass"
+          ]
+        },
+        "financialImplications": "Missed revenue opportunity"
+      },
+      "proposed": {
+        "actions": [
+          "Thermal Conversion",
+          "Waste Reduction",
+          "Biochar Production",
+          "Renewable Energy Generation from biomass"
+        ],
+        "inputs": [
+          "Reduced Volume Digestate (from AD)",
+          "Pyrolysis gas"
+        ],
+        "outputs": [
+          "Biochar (to Chicken House and Land Application)",
+          "Syngas Energy (Renewable steam/hot water or electricity)",
+          "Bio Oils",
+          "Wood Vinegars"
+        ],
+        "impacts": {
+          "benefits": [
+            "Permanent GHG reduction via stopping organic matter degradation into methane, nitrous oxides and reduced CO2",
+            "Stored Carbon/Sequestered when land applied on Farms",
+            "Renewable Energy Generation",
+            "Waste turned into useful products"
+          ],
+          "detriments": []
+        },
+        "financialImplications": "Profitably generates revenue from outputs"
+      }
+    },
+    "farm-waterways": {
+      "name": "Farm & Bodies of Water",
+      "order": 5,
+      "current": {
+        "actions": [
+          "Farm: Poultry Litter Recipient",
+          "Crop Cultivation",
+          "Bodies of Water: Human and Environmental Support",
+          "Natural Ecosystem (Fish, Plants, Animals, Biodiversity)"
+        ],
+        "inputs": [
+          "Farm: Chemical Fertilizers (from Fossil Fuels)",
+          "Used Poultry Litter",
+          "Water",
+          "Diesel Fuel",
+          "Labor",
+          "Bodies of Water: Fertilizer runoff",
+          "Water"
+        ],
+        "outputs": [
+          "Farm: Crops (back to Chicken House and Others)",
+          "Bodies of Water: Drinking and Irrigation sources",
+          "Natural resources",
+          "Ecosystems"
+        ],
+        "impacts": {
+          "benefits": [],
+          "detriments": [
+            "Significant GHG Emissions & Nitrogen Losses",
+            "Fertilizer & Water Losses",
+            "Eutrophication of nearby Bodies of Water",
+            "Degraded ecosystem health"
+          ]
+        },
+        "financialImplications": "Increased farming costs due to elevated use of chemical fertilizers, pesticides and water"
+      },
+      "proposed": {
+        "actions": [
+          "Receive and land apply Biochar",
+          "Crop Cultivation",
+          "Improved quality and vitality of nearby bodies of water"
+        ],
+        "inputs": [
+          "Digestate Liquids (from AD)",
+          "Biochar and Wood Vinegar (from Pyrolysis Units)",
+          "Chemical Fertilizers (reduced)",
+          "Diesel fuel",
+          "Labor",
+          "Water (reduced)"
+        ],
+        "outputs": [
+          "Farm: Biochar (from Pyrolysis Unit, for Chicken House/Land)",
+          "Digestate/Digestate Liquid (for Land Application)",
+          "Crops (for Chicken House and Others)",
+          "Bodies of Water: Drinking and Irrigation sources",
+          "Natural resources",
+          "Healthy Ecosystems"
+        ],
+        "impacts": {
+          "benefits": [
+            "Reduced GHG Emissions & Reduced Nitrogen Losses",
+            "Reduced chemical fertilizer & water requirements",
+            "Potential reduction in pesticide usage",
+            "Reduced eutrophication of nearby Bodies of Water",
+            "Healthier ecosystems",
+            "Improved soil health and structure"
+          ],
+          "detriments": []
+        },
+        "financialImplications": "Improved crop yields, improved soil health and structure, with lower inputs of chemical fertilizers and pesticides which combine to improve profitability of the farm"
+      }
+    }
+  },
+  "summary": {
+    "current": {
+      "totalComponents": 3,
+      "activeComponents": [
+        "chicken-house",
+        "processing-plant",
+        "farm-waterways"
+      ],
+      "keyCharacteristics": [
+        "Linear waste disposal model",
+        "High fossil fuel dependency",
+        "Significant environmental pollution",
+        "High operational costs",
+        "Nutrient runoff and water contamination"
+      ]
+    },
+    "proposed": {
+      "totalComponents": 5,
+      "activeComponents": [
+        "chicken-house",
+        "processing-plant",
+        "anaerobic-digester",
+        "pyrolysis-unit",
+        "farm-waterways"
+      ],
+      "keyCharacteristics": [
+        "Circular economy model",
+        "Renewable energy self-sufficiency",
+        "Net-negative carbon emissions",
+        "Multiple revenue streams",
+        "95% nutrient recovery",
+        "Zero waste system"
+      ]
+    },
+    "overallComparison": {
+      "environmentalImpact": "90% reduction in GHG emissions, elimination of water pollution",
+      "economicImpact": "Improved profitability across all stakeholders through waste-to-value conversion",
+      "operationalImpact": "Transform waste disposal costs into revenue streams while improving product quality"
+    }
+  }
+}

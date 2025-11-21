@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Farms - Proposed System (Detailed)",
+    "description": "Detailed view of farms using biochar and digestate for sustainable agriculture instead of commercial fertilizers",
+    "type": "detail",
+    "system": "proposed",
+    "component": "farms"
+  },
+  "nodes": [
+    {
+      "id": "biochar-in",
+      "name": "Biochar<br/>(from Pyrolysis)",
+      "x": 100,
+      "y": 200,
+      "width": 80,
+      "height": 80,
+      "color": "#1F2937",
+      "icon": "/images/iconslibrary/biochar-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "digestate-liquid-in",
+      "name": "Digestate<br/>Liquid",
+      "x": 100,
+      "y": 330,
+      "width": 80,
+      "height": 80,
+      "color": "#059669",
+      "icon": "/images/iconslibrary/digestate-liquids-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "digestate-solid-in",
+      "name": "Digestate<br/>Solid",
+      "x": 100,
+      "y": 460,
+      "width": 80,
+      "height": 80,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/digestate-solids-reduced-volume-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "water-in",
+      "name": "Water<br/>(for irrigation)",
+      "x": 100,
+      "y": 590,
+      "width": 80,
+      "height": 80,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "farms-main",
+      "name": "Sustainable<br/>Farms",
+      "x": 350,
+      "y": 350,
+      "width": 180,
+      "height": 150,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/farms-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "crops-out",
+      "name": "High-Quality<br/>Crops",
+      "x": 650,
+      "y": 250,
+      "width": 80,
+      "height": 80,
+      "color": "#F59E0B",
+      "icon": "/images/iconslibrary/crops-corn-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "water-out",
+      "name": "Clean<br/>Water",
+      "x": 650,
+      "y": 400,
+      "width": 80,
+      "height": 80,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "carbon-sequestered",
+      "name": "Carbon<br/>Sequestration",
+      "x": 650,
+      "y": 550,
+      "width": 80,
+      "height": 80,
+      "color": "#059669",
+      "icon": "/images/iconslibrary/co2-reduction-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "biochar-in",
+      "target": "farms-main",
+      "value": 14,
+      "color": "#1F2937",
+      "label": "300 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 5
+    },
+    {
+      "id": "link-2",
+      "source": "digestate-liquid-in",
+      "target": "farms-main",
+      "value": 12,
+      "color": "#059669",
+      "label": "200 L",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-3",
+      "source": "digestate-solid-in",
+      "target": "farms-main",
+      "value": 10,
+      "color": "#10B981",
+      "label": "100 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-4",
+      "source": "water-in",
+      "target": "farms-main",
+      "value": 8,
+      "color": "#3B82F6",
+      "label": "1000 L",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-5",
+      "source": "farms-main",
+      "target": "crops-out",
+      "value": 16,
+      "color": "#F59E0B",
+      "label": "2000 kg",
+      "animationFrequency": 3,
+      "animationRate": 6,
+      "animationSize": 5
+    },
+    {
+      "id": "link-6",
+      "source": "farms-main",
+      "target": "water-out",
+      "value": 6,
+      "color": "#3B82F6",
+      "label": "950 L (95% clean)",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 3
+    },
+    {
+      "id": "link-7",
+      "source": "farms-main",
+      "target": "carbon-sequestered",
+      "value": 8,
+      "color": "#059669",
+      "label": "500 kg CO2",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4
+    }
+  ],
+  "config": {
+    "width": 850,
+    "height": 850,
+    "nodePadding": 20,
+    "nodeWidth": 100,
+    "circularLinkGap": 20
+  }
+}

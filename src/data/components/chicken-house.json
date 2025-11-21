@@ -1,0 +1,146 @@
+{
+  "id": "chicken-house",
+  "name": "Chicken House",
+  "description": "Large-scale broiler housing producing substantial litter annually",
+  "classification": "Housing & Management, Chicken Growth",
+  "keyMetric": {
+    "label": "Carbon Credit Value",
+    "value": "Valuable carbon credits"
+  },
+  "current": {
+    "description": "Traditional poultry operations generate significant waste with disposal costs and environmental liabilities",
+    "actions": ["Housing & Management", "Chicken Growth"],
+    "inputs": [
+      {
+        "type": "material",
+        "label": "Fresh Pine Shavings",
+        "icon": "🌲",
+        "description": "Traditional bedding material sourced externally. Standard transportation costs with regular replacement schedule."
+      },
+      {
+        "type": "material",
+        "label": "Chicken Feed",
+        "icon": "🌾",
+        "description": "Primary nutrition source with efficient conversion ratio. Major operational expense."
+      }
+    ],
+    "outputs": [
+      {
+        "type": "material",
+        "label": "Live Chickens",
+        "amount": "To processing plant",
+        "icon": "🐔",
+        "description": "Healthy birds ready for processing. High annual bird production across multiple flocks."
+      },
+      {
+        "type": "material",
+        "label": "Dead Chickens",
+        "icon": "💀",
+        "description": "Mortality higher in current practice due to poor air quality from ammonia emissions. Significant economic loss."
+      },
+      {
+        "type": "manure",
+        "label": "Used Poultry Litter",
+        "amount": "Substantial annual production",
+        "icon": "💩",
+        "emphasis": true,
+        "description": "Contaminated bedding with high ammonia levels compared to proposed system. Disposal costs required. Major environmental and health concern."
+      }
+    ],
+    "impacts": {
+      "detriments": []
+    },
+    "issues": [
+      "High ammonia emissions affecting bird and worker health",
+      "Disposal costs required",
+      "Moisture management challenges",
+      "Regulatory compliance costs",
+      "Higher mortality from poor air quality"
+    ]
+  },
+  "proposed": {
+    "description": "Biochar-enhanced poultry operations with circular nutrient management and improved air quality",
+    "actions": ["Housing & Management", "Chicken Growth"],
+    "inputs": [
+      {
+        "type": "material",
+        "label": "Fresh Pine Shavings",
+        "icon": "🌲",
+        "description": "Same bedding material but enhanced with biochar. Creates superior environment for birds with better moisture management."
+      },
+      {
+        "type": "biochar",
+        "label": "Biochar",
+        "amount": "Small proportion addition",
+        "icon": "⚫",
+        "highlight": true,
+        "description": "Carbon-stable soil amendment produced from pyrolysis. Significantly reduces ammonia, improves bird health, eliminates disposal costs. Valuable market price with grant support available."
+      },
+      {
+        "type": "material",
+        "label": "Chicken Feed",
+        "icon": "🌾",
+        "description": "Same feed as current practice but birds have better feed conversion ratios due to improved air quality and reduced ammonia stress."
+      },
+      {
+        "type": "material",
+        "label": "Labor",
+        "icon": "👷",
+        "description": "Farm workforce managing biochar-enhanced operations. Better working conditions due to reduced ammonia exposure."
+      },
+      {
+        "type": "material",
+        "label": "Crops",
+        "icon": "🌱",
+        "description": "Agricultural products benefiting from biochar-enhanced litter and digestate as organic fertilizer inputs."
+      }
+    ],
+    "outputs": [
+      {
+        "type": "material",
+        "label": "Live Chickens",
+        "amount": "To processing plant",
+        "icon": "🐔",
+        "description": "Healthier birds with lower mortality. Better foot health. Premium pricing possible for biochar-raised poultry."
+      },
+      {
+        "type": "material",
+        "label": "Dead Chickens",
+        "icon": "💀",
+        "description": "Significantly reduced mortality due to better air quality and reduced ammonia stress. Major economic benefit."
+      },
+      {
+        "type": "manure",
+        "label": "Litter & Char",
+        "amount": "Enhanced with biochar",
+        "icon": "♻️",
+        "highlight": true,
+        "description": "Valuable resource instead of waste! Enhanced litter goes to anaerobic digester for energy production. High phosphorus and nitrogen recovery. Zero disposal costs."
+      }
+    ],
+    "impacts": {
+      "benefits": [
+        "Reduced P runoff (Benefit)",
+        "Better Ammonia control",
+        "Better gut health",
+        "Improved mortality",
+        "Improved yield"
+      ]
+    },
+    "benefits": [
+      "Significant reduction in ammonia emissions",
+      "Reduced mortality means significant savings",
+      "Better feed conversion ratios",
+      "Reduced foot damage (chicken feet have significant value)",
+      "Eliminated disposal costs",
+      "Grant support available for biochar-enhanced litter",
+      "Premium pricing in some markets for biochar-raised poultry"
+    ]
+  },
+  "technicalDetails": {
+    "scale": "Large-scale broiler house with high annual bird production",
+    "production": "Multiple flocks annually",
+    "litterComposition": "High nitrogen and phosphorus content in bedding material",
+    "energyContent": "Moderate heating value"
+  }
+}

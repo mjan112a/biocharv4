@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "description": "Icon library registry with tooltip associations",
+    "tooltip_file": "/data/icon-tooltips.json",
+    "note": "Tooltip key matches icon filename (without .svg extension)"
+  },
+  "categories": [
+    {
+      "name": "Components",
+      "icon": "🏭",
+      "icons": [
+        {
+          "name": "Chicken House",
+          "file": "chicken-house-01.svg",
+          "keywords": "chicken, house, coop, farm, poultry",
+          "tooltip": "chicken-house-01"
+        },
+        {
+          "name": "Processing Plant",
+          "file": "processing-plant-01.svg",
+          "keywords": "processing, plant, factory, facility",
+          "tooltip": "processing-plant-01"
+        },
+        {
+          "name": "Anaerobic Digester",
+          "file": "anaerobic-digester-01.svg",
+          "keywords": "anaerobic, digester, biogas, methane",
+          "tooltip": "anaerobic-digester-01"
+        },
+        {
+          "name": "Pyrolysis Unit",
+          "file": "pyrolysis-unit-01.svg",
+          "keywords": "pyrolysis, unit, biochar, thermal",
+          "tooltip": "pyrolysis-unit-01"
+        },
+        {
+          "name": "Farm Waterways",
+          "file": "farm-waterways-01.svg",
+          "keywords": "farm, waterways, field, agriculture, land"
+        }
+      ]
+    },
+    {
+      "name": "Energy",
+      "icon": "⚡",
+      "icons": [
+        {
+          "name": "Bio-Methane",
+          "file": "bio-methane-01.svg",
+          "keywords": "bio, methane, biogas, gas, energy",
+          "tooltip": "bio-methane-01"
+        },
+        {
+          "name": "Syngas Energy",
+          "file": "syngas-energy-01.svg",
+          "keywords": "syngas, energy, power, electricity"
+        },
+        {
+          "name": "Renewable Biofuels",
+          "file": "renewable-biofuels-01.svg",
+          "keywords": "renewable, biofuels, fuel, oil, diesel"
+        }
+      ]
+    },
+    {
+      "name": "Inputs",
+      "icon": "📥",
+      "icons": [
+        {
+          "name": "Live Chickens",
+          "file": "live-chickens-01.svg",
+          "keywords": "live, chickens, birds, poultry",
+          "tooltip": "live-chickens-01"
+        },
+        {
+          "name": "Dead Chickens",
+          "file": "dead-chickens-01.svg",
+          "keywords": "dead, chickens, mortality, disposal"
+        },
+        {
+          "name": "Used Poultry Litter",
+          "file": "used-poultry-litter-01.svg",
+          "keywords": "used, poultry, litter, waste, manure",
+          "tooltip": "used-poultry-litter-01"
+        },
+        {
+          "name": "Litter with Char",
+          "file": "litter-char-from-chicken-house-01.svg",
+          "keywords": "litter, char, biochar, chicken, house"
+        },
+        {
+          "name": "FOG (Fats, Oils, Greases)",
+          "file": "fog-fats-oils-greases-01.svg",
+          "keywords": "fog, fats, oils, greases, waste"
+        }
+      ]
+    },
+    {
+      "name": "Outputs",
+      "icon": "📤",
+      "icons": [
+        {
+          "name": "Biochar",
+          "file": "biochar-01.svg",
+          "keywords": "biochar, char, carbon, soil",
+          "tooltip": "biochar-01"
+        },
+        {
+          "name": "Chicken Meat",
+          "file": "chicken-meat-01.svg",
+          "keywords": "chicken, meat, product, food",
+          "tooltip": "chicken-meat-01"
+        },
+        {
+          "name": "Crops/Corn",
+          "file": "crops-corn-01.svg",
+          "keywords": "crops, corn, grain, harvest, agriculture",
+          "tooltip": "crops-corn-01"
+        },
+        {
+          "name": "Bio-Oils",
+          "file": "bio-oils-01.svg",
+          "keywords": "bio, oils, liquid, fuel"
+        },
+        {
+          "name": "Wood Vinegars",
+          "file": "wood-vinegars-01.svg",
+          "keywords": "wood, vinegars, liquid, pyroligneous"
+        },
+        {
+          "name": "Water",
+          "file": "water-01.svg",
+          "keywords": "water, liquid, h2o"
+        }
+      ]
+    },
+    {
+      "name": "Digestate",
+      "icon": "♻️",
+      "icons": [
+        {
+          "name": "Digestate Liquids",
+          "file": "digestate-liquids-01.svg",
+          "keywords": "digestate, liquids, effluent, liquid",
+          "tooltip": "digestate-liquids-01"
+        },
+        {
+          "name": "Digestate Solids",
+          "file": "digestate-solids-reduced-volume-01.svg",
+          "keywords": "digestate, solids, fiber, compost"
+        }
+      ]
+    }
+  ]
+}

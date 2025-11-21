@@ -1,0 +1,185 @@
+{
+  "nodes": [
+    {
+      "id": "live-chickens-input",
+      "name": "Live Chickens",
+      "x": 100,
+      "y": 150,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/live-chickens.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fossil-fuels-input",
+      "name": "Fossil Fuels",
+      "x": 105.26711813393527,
+      "y": 383.3604864038697,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/energy/renewable-biofuels-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing Plant",
+      "x": 373.32580887885626,
+      "y": 215.11866171752968,
+      "type": "component",
+      "width": 140,
+      "height": 140,
+      "icon": "/images/system-icons/components/processing-plant.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "meat-output",
+      "name": "Meat Products",
+      "x": 732.4303987960873,
+      "y": 42.75382522380289,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/chicken-meat.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "power-output",
+      "name": "Power",
+      "x": 748.2317531978932,
+      "y": 185.8109810376392,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/energy/syngas-energy.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fog-output",
+      "name": "DAF FOG",
+      "x": 694.8081264108353,
+      "y": 314.1890189623608,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/fog-fats-oils-greases.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "waste-output",
+      "name": "Other Waste",
+      "x": 760.2708803611739,
+      "y": 463.25937620719196,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/waste.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "co2-output",
+      "name": "CO2 Emissions",
+      "x": 600,
+      "y": 500,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "chickens-to-plant",
+      "source": "live-chickens-input",
+      "target": "processing-plant",
+      "value": 5,
+      "label": "From House (150)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "fossil-to-plant",
+      "source": "fossil-fuels-input",
+      "target": "processing-plant",
+      "value": 5,
+      "label": "Energy (40)",
+      "type": "energy",
+      "animated": false,
+      "particleType": "icon",
+      "particleIconSource": "source",
+      "animationSize": 10
+    },
+    {
+      "id": "plant-to-meat",
+      "source": "processing-plant",
+      "target": "meat-output",
+      "value": 5,
+      "label": "Products (30)",
+      "type": "material",
+      "animated": true,
+      "particleType": "icon",
+      "particleIconSource": "target",
+      "animationSize": 10
+    },
+    {
+      "id": "plant-to-power",
+      "source": "processing-plant",
+      "target": "power-output",
+      "value": 5,
+      "label": "Electricity (30)",
+      "type": "energy",
+      "animated": true,
+      "particleType": "icon",
+      "particleIconSource": "target"
+    },
+    {
+      "id": "plant-to-fog",
+      "source": "processing-plant",
+      "target": "fog-output",
+      "value": 5,
+      "label": "To Digester (40)",
+      "type": "waste",
+      "animated": true,
+      "particleType": "icon",
+      "particleIconSource": "target",
+      "animationSize": 5
+    },
+    {
+      "id": "plant-to-waste",
+      "source": "processing-plant",
+      "target": "waste-output",
+      "value": 5,
+      "label": "To Digester (50)",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "plant-to-co2",
+      "source": "processing-plant",
+      "target": "co2-output",
+      "value": 5,
+      "label": "Emissions (15)",
+      "type": "emission",
+      "animated": false,
+      "particleType": "dot",
+      "animationSize": 7
+    }
+  ],
+  "config": {
+    "width": 1000,
+    "height": 1100,
+    "nodePadding": 20,
+    "nodeWidth": 80,
+    "circularLinkGap": 20
+  }
+}

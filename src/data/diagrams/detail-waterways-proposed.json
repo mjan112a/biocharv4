@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "title": "Waterways - Proposed System (Detailed)",
+    "description": "Detailed view of waterways showing 95% pollution reduction from biochar system implementation",
+    "type": "detail",
+    "system": "proposed",
+    "component": "waterways"
+  },
+  "nodes": [
+    {
+      "id": "farm-runoff",
+      "name": "Farm<br/>Runoff",
+      "x": 100,
+      "y": 300,
+      "width": 80,
+      "height": 80,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "biochar-filter",
+      "name": "Biochar<br/>Filtration",
+      "x": 100,
+      "y": 450,
+      "width": 80,
+      "height": 80,
+      "color": "#1F2937",
+      "icon": "/images/iconslibrary/biochar-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "waterways-main",
+      "name": "Clean<br/>Waterways",
+      "x": 350,
+      "y": 325,
+      "width": 180,
+      "height": 150,
+      "color": "#0EA5E9",
+      "icon": "/images/iconslibrary/farm-waterways-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "clean-water-out",
+      "name": "Clean Water<br/>(95% pure)",
+      "x": 650,
+      "y": 250,
+      "width": 80,
+      "height": 80,
+      "color": "#0EA5E9",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "aquatic-life",
+      "name": "Healthy<br/>Ecosystem",
+      "x": 650,
+      "y": 400,
+      "width": 80,
+      "height": 80,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/farm-waterways-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "minimal-pollutants",
+      "name": "Minimal<br/>Pollutants",
+      "x": 650,
+      "y": 550,
+      "width": 80,
+      "height": 80,
+      "color": "#EF4444",
+      "icon": "/images/iconslibrary/GHG-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "farm-runoff",
+      "target": "waterways-main",
+      "value": 14,
+      "color": "#3B82F6",
+      "label": "950 L clean",
+      "animationFrequency": 2,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-2",
+      "source": "biochar-filter",
+      "target": "waterways-main",
+      "value": 10,
+      "color": "#1F2937",
+      "label": "Filters pollutants",
+      "animationFrequency": 3,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-3",
+      "source": "waterways-main",
+      "target": "clean-water-out",
+      "value": 16,
+      "color": "#0EA5E9",
+      "label": "95% clean",
+      "animationFrequency": 3,
+      "animationRate": 6,
+      "animationSize": 5
+    },
+    {
+      "id": "link-4",
+      "source": "waterways-main",
+      "target": "aquatic-life",
+      "value": 12,
+      "color": "#10B981",
+      "label": "Thriving",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-5",
+      "source": "waterways-main",
+      "target": "minimal-pollutants",
+      "value": 4,
+      "color": "#EF4444",
+      "label": "5% only",
+      "animationFrequency": 1,
+      "animationRate": 1,
+      "animationSize": 2
+    }
+  ],
+  "config": {
+    "width": 850,
+    "height": 850,
+    "nodePadding": 20,
+    "nodeWidth": 100,
+    "circularLinkGap": 20
+  }
+}

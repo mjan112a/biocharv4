@@ -1,0 +1,414 @@
+{
+  "nodes": [
+    {
+      "id": "fresh-pine-shavings-input",
+      "name": "Fresh Pine Shavings",
+      "x": 50,
+      "y": 250,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/iconslibrary/litter-char-from-chicken-house-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "chicken-feed-input",
+      "name": "Chicken Feed",
+      "x": 50,
+      "y": 400,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/iconslibrary/crops-corn-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "chicken-house",
+      "name": "Chicken House",
+      "x": 200,
+      "y": 300,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/iconslibrary/chicken-house-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "live-chickens",
+      "name": "Live Chickens",
+      "x": 380,
+      "y": 100,
+      "type": "intermediate",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/iconslibrary/live-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "dead-chickens",
+      "name": "Dead Chickens",
+      "x": 380,
+      "y": 200,
+      "type": "intermediate",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/iconslibrary/dead-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "used-litter",
+      "name": "Used Poultry Litter",
+      "x": 380,
+      "y": 400,
+      "type": "intermediate",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/iconslibrary/used-poultry-litter-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fossil-fuels",
+      "name": "Fossil Fuels",
+      "x": 380,
+      "y": 300,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/iconslibrary/renewable-biofuels-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "electricity-input",
+      "name": "Electricity",
+      "x": 520,
+      "y": 300,
+      "type": "input",
+      "width": 60,
+      "height": 60,
+      "icon": "/images/iconslibrary/syngas-energy-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing Plant",
+      "x": 550,
+      "y": 150,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/iconslibrary/processing-plant-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "meat-output",
+      "name": "Meat",
+      "x": 750,
+      "y": 100,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/iconslibrary/chicken-meat-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fog-waste",
+      "name": "FOG to Landfill",
+      "x": 750,
+      "y": 200,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/iconslibrary/fog-fats-oils-greases-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "ghg-emissions-plant",
+      "name": "GHG Emissions",
+      "x": 550,
+      "y": 40,
+      "type": "emission",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/iconslibrary/syngas-energy-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "chemical-fertilizers",
+      "name": "Chemical Fertilizers",
+      "x": 250,
+      "y": 550,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/iconslibrary/digestate-solids-reduced-volume-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "diesel-labor",
+      "name": "Diesel & Labor",
+      "x": 150,
+      "y": 650,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/iconslibrary/renewable-biofuels-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "land-application",
+      "name": "Crops on Land Application",
+      "x": 400,
+      "y": 600,
+      "type": "component",
+      "width": 140,
+      "height": 140,
+      "icon": "/images/iconslibrary/farm-waterways-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "crops-output",
+      "name": "Crops",
+      "x": 200,
+      "y": 500,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/iconslibrary/crops-corn-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "ghg-emissions-land",
+      "name": "GHG/Nitrogen Losses",
+      "x": 600,
+      "y": 550,
+      "type": "emission",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/iconslibrary/syngas-energy-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "water-losses",
+      "name": "Fertilizer & Water Losses",
+      "x": 600,
+      "y": 650,
+      "type": "emission",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "runoff-eutrophication",
+      "name": "Runoff & Eutrophication",
+      "x": 750,
+      "y": 600,
+      "type": "emission",
+      "width": 90,
+      "height": 90,
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "pine-to-house",
+      "source": "fresh-pine-shavings-input",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Bedding",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "feed-to-house",
+      "source": "chicken-feed-input",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Feed",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "house-to-live",
+      "source": "chicken-house",
+      "target": "live-chickens",
+      "value": 5,
+      "label": "Live Chickens",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "house-to-dead",
+      "source": "chicken-house",
+      "target": "dead-chickens",
+      "value": 3,
+      "label": "Mortality",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "house-to-litter",
+      "source": "chicken-house",
+      "target": "used-litter",
+      "value": 5,
+      "label": "Used Litter",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "live-to-processing",
+      "source": "live-chickens",
+      "target": "processing-plant",
+      "value": 5,
+      "label": "To Processing",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "dead-to-processing",
+      "source": "dead-chickens",
+      "target": "processing-plant",
+      "value": 3,
+      "label": "Disposal",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "fossil-to-processing",
+      "source": "fossil-fuels",
+      "target": "processing-plant",
+      "value": 4,
+      "label": "Fossil Energy",
+      "type": "energy",
+      "animated": false
+    },
+    {
+      "id": "electric-to-processing",
+      "source": "electricity-input",
+      "target": "processing-plant",
+      "value": 4,
+      "label": "Power",
+      "type": "energy",
+      "animated": false
+    },
+    {
+      "id": "processing-to-meat",
+      "source": "processing-plant",
+      "target": "meat-output",
+      "value": 5,
+      "label": "Meat Products",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "processing-to-fog",
+      "source": "processing-plant",
+      "target": "fog-waste",
+      "value": 4,
+      "label": "FOG Waste",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "processing-to-ghg",
+      "source": "processing-plant",
+      "target": "ghg-emissions-plant",
+      "value": 3,
+      "label": "Emissions",
+      "type": "emission",
+      "animated": false
+    },
+    {
+      "id": "litter-to-land",
+      "source": "used-litter",
+      "target": "land-application",
+      "value": 5,
+      "label": "Litter Application",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "chem-fert-to-land",
+      "source": "chemical-fertilizers",
+      "target": "land-application",
+      "value": 4,
+      "label": "Fertilizers",
+      "type": "material",
+      "animated": false
+    },
+    {
+      "id": "diesel-to-land",
+      "source": "diesel-labor",
+      "target": "land-application",
+      "value": 3,
+      "label": "Operations",
+      "type": "support",
+      "animated": false
+    },
+    {
+      "id": "land-to-crops",
+      "source": "land-application",
+      "target": "crops-output",
+      "value": 5,
+      "label": "Crop Yield",
+      "type": "material",
+      "animated": true,
+      "returnConnector": true,
+      "returnYOffset": 50
+    },
+    {
+      "id": "land-to-ghg",
+      "source": "land-application",
+      "target": "ghg-emissions-land",
+      "value": 4,
+      "label": "N₂O & CH₄",
+      "type": "emission",
+      "animated": false
+    },
+    {
+      "id": "land-to-water-loss",
+      "source": "land-application",
+      "target": "water-losses",
+      "value": 4,
+      "label": "Nutrient Leaching",
+      "type": "emission",
+      "animated": false
+    },
+    {
+      "id": "water-to-runoff",
+      "source": "water-losses",
+      "target": "runoff-eutrophication",
+      "value": 4,
+      "label": "To Waterways",
+      "type": "emission",
+      "animated": true
+    }
+  ],
+  "config": {
+    "width": 950,
+    "height": 850,
+    "nodePadding": 20,
+    "nodeWidth": 80,
+    "circularLinkGap": 20
+  }
+}

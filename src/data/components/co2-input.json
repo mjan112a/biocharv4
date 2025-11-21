@@ -1,0 +1,87 @@
+{
+  "id": "co2-input",
+  "name": "CO2 Gas Input",
+  "description": "Carbon dioxide gas supply for processing plant operations",
+  "classification": "Input, Processing Gas",
+  "keyMetric": {
+    "label": "CO2 Supply",
+    "value": "Essential for processing"
+  },
+  "current": {
+    "description": "External CO2 supply for processing plant cooling and packaging operations",
+    "actions": ["CO2 Supply", "Gas Storage"],
+    "inputs": [
+      {
+        "type": "gas",
+        "label": "Commercial CO2",
+        "icon": "💨",
+        "emphasis": true
+      }
+    ],
+    "outputs": [
+      {
+        "type": "gas",
+        "label": "CO2 Gas",
+        "amount": "To processing plant",
+        "icon": "🌫️"
+      }
+    ],
+    "impacts": {
+      "detriments": [
+        "External sourcing required",
+        "Transportation emissions",
+        "Ongoing supply costs"
+      ]
+    },
+    "issues": [
+      "Dependence on external suppliers",
+      "Transportation and storage costs",
+      "Carbon footprint from delivery"
+    ]
+  },
+  "proposed": {
+    "description": "CO2 supply with potential partial sourcing from anaerobic digester biogas upgrading",
+    "actions": ["CO2 Supply", "Potential On-Site Production"],
+    "inputs": [
+      {
+        "type": "gas",
+        "label": "Commercial CO2",
+        "icon": "💨"
+      },
+      {
+        "type": "gas",
+        "label": "CO2 from AD (potential)",
+        "icon": "♻️",
+        "highlight": true
+      }
+    ],
+    "outputs": [
+      {
+        "type": "gas",
+        "label": "CO2 Gas",
+        "amount": "To processing plant",
+        "icon": "🌫️",
+        "highlight": true
+      }
+    ],
+    "impacts": {
+      "benefits": [
+        "Potential on-site CO2 production from AD",
+        "Reduced external sourcing",
+        "Lower transportation needs"
+      ]
+    },
+    "benefits": [
+      "Anaerobic digester can provide CO2 as byproduct",
+      "Reduced reliance on external suppliers",
+      "Lower carbon footprint",
+      "Cost savings from on-site production"
+    ]
+  },
+  "technicalDetails": {
+    "purpose": "Cooling and packaging in meat processing",
+    "quality": "Food-grade CO2 required",
+    "source": "External supply with potential AD integration",
+    "storage": "Pressurized tank storage system"
+  }
+}

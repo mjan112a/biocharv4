@@ -1,0 +1,151 @@
+{
+  "iconMapping": {
+    "components": {
+      "chicken-house": {
+        "filename": "Generated Image October 29, 2025 - 7_33PM.png",
+        "newName": "chicken-house.png",
+        "description": "Red barn representing chicken housing facility"
+      },
+      "processing-plant": {
+        "filename": "Generated Image October 29, 2025 - 7_32PM (1).png",
+        "newName": "processing-plant.png",
+        "description": "Factory buildings representing poultry processing facility"
+      },
+      "anaerobic-digester": {
+        "filename": "Generated Image October 29, 2025 - 7_32PM (2).png",
+        "newName": "anaerobic-digester.png",
+        "description": "Digester equipment for waste processing"
+      },
+      "pyrolysis-unit": {
+        "filename": "Generated Image October 29, 2025 - 7_32PM (3).png",
+        "newName": "pyrolysis-unit.png",
+        "description": "Cylindrical pyrolysis equipment"
+      },
+      "farm-waterways": {
+        "filename": "Generated Image October 29, 2025 - 7_32PM (4).png",
+        "newName": "farm-waterways.png",
+        "description": "Landscape showing farm and water bodies"
+      }
+    },
+    "inputs": {
+      "fresh-pine-shavings": {
+        "filename": "Generated Image October 29, 2025 - 7_27PM (6).png",
+        "newName": "fresh-pine-shavings.png",
+        "description": "Pile of fresh pine bedding material"
+      },
+      "chicken-feed": {
+        "filename": "Generated Image October 29, 2025 - 7_27PM (7).png",
+        "newName": "chicken-feed.png",
+        "description": "Burlap sack of chicken feed"
+      },
+      "water": {
+        "filename": "Generated Image October 29, 2025 - 7_32PM.png",
+        "newName": "water.png",
+        "description": "Water droplet with circulation arrows"
+      },
+      "live-chickens": {
+        "filename": "Generated Image October 29, 2025 - 7_27PM (5).png",
+        "newName": "live-chickens.png",
+        "description": "Illustration of live chickens"
+      },
+      "dead-chickens": {
+        "filename": "Generated Image October 29, 2025 - 7_27PM (4).png",
+        "newName": "dead-chickens.png",
+        "description": "Illustration representing mortality"
+      },
+      "dry-ice": {
+        "filename": "Generated Image October 29, 2025 - 7_26PM (4).png",
+        "newName": "dry-ice.png",
+        "description": "Dry ice for processing plant"
+      },
+      "co2-gas": {
+        "filename": "co2gas.svg",
+        "newName": "co2-gas.svg",
+        "description": "CO2 gas representation"
+      }
+    },
+    "intermediateOutputs": {
+      "used-litter": {
+        "filename": "Generated Image October 29, 2025 - 7_27PM (2).png",
+        "newName": "used-poultry-litter.png",
+        "description": "Used poultry litter and charged biochar mixture"
+      },
+      "litter-char-mix": {
+        "filename": "Generated Image October 29, 2025 - 7_26PM (1).png",
+        "newName": "litter-char-from-chicken-house.png",
+        "description": "Litter and char mixture from chicken house"
+      },
+      "fog": {
+        "filename": "Generated Image October 29, 2025 - 7_26PM (2).png",
+        "newName": "fog-fats-oils-greases.png",
+        "description": "Container of fats, oils, and greases from processing"
+      },
+      "chicken-meat": {
+        "filename": "Generated Image October 29, 2025 - 7_27PM (1).png",
+        "newName": "chicken-meat.png",
+        "description": "Processed chicken meat cuts"
+      }
+    },
+    "anaerobicDigesterOutputs": {
+      "digestate-liquids": {
+        "filename": "Generated Image October 29, 2025 - 7_26PM.png",
+        "newName": "digestate-liquids.png",
+        "description": "Liquid digestate fertilizer"
+      },
+      "bio-methane": {
+        "filename": "Generated Image October 29, 2025 - 7_25PM (1).png",
+        "newName": "bio-methane.png",
+        "description": "Renewable bio-methane molecule"
+      },
+      "digestate-solids": {
+        "filename": "Generated Image October 29, 2025 - 7_25PM.png",
+        "newName": "digestate-solids-reduced-volume.png",
+        "description": "Reduced volume digestate solids"
+      },
+      "renewable-biofuels": {
+        "filename": "Generated Image October 29, 2025 - 7_27PM.png",
+        "newName": "renewable-biofuels.png",
+        "description": "Molecular structure of renewable biofuels"
+      }
+    },
+    "pyrolysisOutputs": {
+      "biochar": {
+        "filename": "Generated Image October 29, 2025 - 7_27PM (3).png",
+        "newName": "biochar.png",
+        "description": "Black biochar carbon sink material"
+      },
+      "syngas-energy": {
+        "filename": "Generated Image October 29, 2025 - 7_28PM.png",
+        "newName": "syngas-energy.png",
+        "description": "Syngas renewable energy"
+      },
+      "bio-oils": {
+        "filename": "Generated Image October 29, 2025 - 7_33PM.png",
+        "newName": "bio-oils.png",
+        "description": "Bio-oils from pyrolysis"
+      },
+      "wood-vinegars": {
+        "filename": "Generated Image October 29, 2025 - 7_29PM.png",
+        "newName": "wood-vinegars.png",
+        "description": "Wood vinegar byproduct"
+      }
+    },
+    "farmOutputs": {
+      "crops": {
+        "filename": "Generated Image October 29, 2025 - 7_30PM.png",
+        "newName": "crops-corn.png",
+        "description": "Corn crops grown on farm"
+      }
+    }
+  },
+  "categories": [
+    "components",
+    "inputs",
+    "intermediateOutputs",
+    "anaerobicDigesterOutputs",
+    "pyrolysisOutputs",
+    "farmOutputs"
+  ],
+  "totalIcons": 25,
+  "renameInstructions": "Use this mapping to rename files from the generic timestamps to descriptive names that match the biochar system components and flows"
+}

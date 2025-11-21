@@ -1,0 +1,216 @@
+{
+  "metadata": {
+    "title": "Farms - Current System (Detailed)",
+    "description": "Detailed view of farm operations using conventional litter management",
+    "type": "detail",
+    "system": "current",
+    "component": "farms"
+  },
+  "nodes": [
+    {
+      "id": "used-litter-in",
+      "name": "Used Poultry<br/>Litter",
+      "x": 100,
+      "y": 200,
+      "width": 80,
+      "height": 80,
+      "color": "#92400E",
+      "icon": "/images/iconslibrary/used-poultry-litter-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fertilizer",
+      "name": "Commercial<br/>Fertilizer",
+      "x": 100,
+      "y": 320,
+      "width": 80,
+      "height": 80,
+      "color": "#EAB308",
+      "icon": "/images/iconslibrary/fertilizer-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "water-in",
+      "name": "Water",
+      "x": 100,
+      "y": 440,
+      "width": 80,
+      "height": 80,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "diesel",
+      "name": "Diesel<br/>(Tractors)",
+      "x": 100,
+      "y": 560,
+      "width": 80,
+      "height": 80,
+      "color": "#DC2626",
+      "icon": "/images/iconslibrary/diesel-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "labor",
+      "name": "Labor",
+      "x": 100,
+      "y": 680,
+      "width": 80,
+      "height": 80,
+      "color": "#6B7280",
+      "icon": "/images/iconslibrary/labor-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "farms-main",
+      "name": "Farms",
+      "x": 350,
+      "y": 400,
+      "width": 180,
+      "height": 150,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/farm-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "crops",
+      "name": "Crops<br/>(Corn)",
+      "x": 650,
+      "y": 300,
+      "width": 80,
+      "height": 80,
+      "color": "#22C55E",
+      "icon": "/images/iconslibrary/crops-corn-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "nutrient-runoff",
+      "name": "Nutrient<br/>Runoff",
+      "x": 650,
+      "y": 450,
+      "width": 80,
+      "height": 80,
+      "color": "#F59E0B",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "ghg",
+      "name": "GHG<br/>Emissions",
+      "x": 650,
+      "y": 600,
+      "width": 80,
+      "height": 80,
+      "color": "#DC2626",
+      "icon": "/images/iconslibrary/GHG-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "used-litter-in",
+      "target": "farms-main",
+      "value": 15,
+      "color": "#713F12",
+      "label": "500 kg",
+      "animationFrequency": 2,
+      "animationRate": 2,
+      "animationSize": 4
+    },
+    {
+      "id": "link-2",
+      "source": "fertilizer",
+      "target": "farms-main",
+      "value": 12,
+      "color": "#EAB308",
+      "label": "300 kg",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-3",
+      "source": "water-in",
+      "target": "farms-main",
+      "value": 18,
+      "color": "#3B82F6",
+      "label": "5,000 L",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-4",
+      "source": "diesel",
+      "target": "farms-main",
+      "value": 8,
+      "color": "#DC2626",
+      "label": "100 L",
+      "animationFrequency": 2,
+      "animationRate": 2,
+      "animationSize": 4
+    },
+    {
+      "id": "link-5",
+      "source": "labor",
+      "target": "farms-main",
+      "value": 6,
+      "color": "#6B7280",
+      "label": "40 hrs",
+      "animationFrequency": 1,
+      "animationRate": 3,
+      "animationSize": 4
+    },
+    {
+      "id": "link-6",
+      "source": "farms-main",
+      "target": "crops",
+      "value": 20,
+      "color": "#22C55E",
+      "label": "2,000 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-7",
+      "source": "farms-main",
+      "target": "nutrient-runoff",
+      "value": 14,
+      "color": "#F59E0B",
+      "label": "40% nutrients",
+      "animationFrequency": 2,
+      "animationRate": 2,
+      "animationSize": 4
+    },
+    {
+      "id": "link-8",
+      "source": "farms-main",
+      "target": "ghg",
+      "value": 10,
+      "color": "#991B1B",
+      "label": "150 kg CO₂",
+      "animationFrequency": 2,
+      "animationRate": 2,
+      "animationSize": 4
+    }
+  ],
+  "config": {
+    "width": 850,
+    "height": 900,
+    "nodePadding": 20,
+    "nodeWidth": 100,
+    "circularLinkGap": 20
+  }
+}

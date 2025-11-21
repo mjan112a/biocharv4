@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-11-10T13:51:00.000Z",
+  "cards": [
+    {
+      "id": "biochar-current-system",
+      "title": "Biochar Current System",
+      "description": "Current standard practice showing the conventional poultry system with fossil fuel dependency, direct land application of litter, and resulting environmental impacts including GHG emissions, nutrient runoff, and water eutrophication.",
+      "diagramPath": "/data/diagrams/biochar-current-system.json",
+      "order": 0,
+      "visible": true,
+      "createdAt": "2025-11-10T13:51:00.000Z",
+      "updatedAt": "2025-11-10T13:51:00.000Z"
+    },
+    {
+      "id": "example-biochar-system",
+      "title": "Complete Biochar System",
+      "description": "An integrated view of the complete biochar system showing all components, flows, and material transformations from chicken house through processing, digestion, pyrolysis, and farm applications.",
+      "diagramPath": "/data/diagrams/biochar-complete-system.json",
+      "order": 1,
+      "visible": true,
+      "createdAt": "2025-11-10T02:49:00.000Z",
+      "updatedAt": "2025-11-10T13:51:00.000Z"
+    },
+    {
+      "id": "diagram-1762782190107",
+      "title": "chicken house",
+      "description": "safdadsfasdfsdf",
+      "diagramPath": "/data/diagrams/sankey-flow-1762740683536-1762782189732.json",
+      "order": 1,
+      "visible": true,
+      "createdAt": "2025-11-10T13:43:10.107Z",
+      "updatedAt": "2025-11-10T13:43:10.107Z"
+    },
+    {
+      "id": "diagram-1762782330049",
+      "title": "Sankey Flow 1762740683536",
+      "description": "fafadfdas",
+      "diagramPath": "/data/diagrams/sankey-flow-1762740683536-1762782329621.json",
+      "order": 1,
+      "visible": true,
+      "createdAt": "2025-11-10T13:45:30.049Z",
+      "updatedAt": "2025-11-10T13:45:30.049Z"
+    },
+    {
+      "id": "diagram-1762782449384",
+      "title": "Sankey Flow 1762727324212",
+      "description": "dlfkal;sdjf;alsjdlkfja;dsjf;alsjdlfjasd;lfja;lsdjf;ajkdfjaj;lakjsfl;ajds",
+      "diagramPath": "/data/diagrams/sankey-flow-1762727324212-1762782448938.json",
+      "order": 1,
+      "visible": true,
+      "createdAt": "2025-11-10T13:47:29.384Z",
+      "updatedAt": "2025-11-10T13:47:29.384Z"
+    }
+  ]
+}

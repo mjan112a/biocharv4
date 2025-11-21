@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "title": "Processing Plant - Proposed System (Detailed)",
+    "description": "Detailed view of processing plant with FOG collection for anaerobic digester",
+    "type": "detail",
+    "system": "proposed",
+    "component": "processing-plant"
+  },
+  "nodes": [
+    {
+      "id": "live-chickens-in",
+      "name": "Live<br/>Chickens",
+      "x": 100,
+      "y": 180,
+      "width": 80,
+      "height": 80,
+      "color": "#059669",
+      "icon": "/images/iconslibrary/live-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "water-in",
+      "name": "Water",
+      "x": 100,
+      "y": 300,
+      "width": 80,
+      "height": 80,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "renewable-energy",
+      "name": "Renewable<br/>Energy",
+      "x": 100,
+      "y": 420,
+      "width": 80,
+      "height": 80,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/syngas-energy-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "co2",
+      "name": "CO₂<br/>(Dry Ice)",
+      "x": 100,
+      "y": 540,
+      "width": 80,
+      "height": 80,
+      "color": "#6B7280",
+      "icon": "/images/iconslibrary/C02-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "processing-plant-main",
+      "name": "Processing<br/>Plant",
+      "x": 350,
+      "y": 380,
+      "width": 180,
+      "height": 150,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/processing-plant-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "chicken-meat",
+      "name": "Chicken<br/>Meat",
+      "x": 650,
+      "y": 150,
+      "width": 80,
+      "height": 80,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/chicken-meat-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fog-to-ad",
+      "name": "FOG<br/>(to AD)",
+      "x": 650,
+      "y": 280,
+      "width": 80,
+      "height": 80,
+      "color": "#8B5CF6",
+      "icon": "/images/iconslibrary/fog-fats-oils-greases-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "dead-to-ad",
+      "name": "Dead<br/>Chickens<br/>(to AD)",
+      "x": 650,
+      "y": 410,
+      "width": 80,
+      "height": 80,
+      "color": "#991B1B",
+      "icon": "/images/iconslibrary/dead-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "clean-water",
+      "name": "Clean<br/>Water",
+      "x": 650,
+      "y": 540,
+      "width": 80,
+      "height": 80,
+      "color": "#14B8A6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "reduced-ghg",
+      "name": "Reduced<br/>GHG<br/>(-70%)",
+      "x": 650,
+      "y": 670,
+      "width": 80,
+      "height": 80,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/GHG-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "live-chickens-in",
+      "target": "processing-plant-main",
+      "value": 20,
+      "color": "#059669",
+      "label": "1,800 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-2",
+      "source": "water-in",
+      "target": "processing-plant-main",
+      "value": 15,
+      "color": "#3B82F6",
+      "label": "2,000 L",
+      "animationFrequency": 3,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-3",
+      "source": "renewable-energy",
+      "target": "processing-plant-main",
+      "value": 12,
+      "color": "#34D399",
+      "label": "1,200 kWh",
+      "animationFrequency": 4,
+      "animationRate": 7,
+      "animationSize": 5
+    },
+    {
+      "id": "link-4",
+      "source": "co2",
+      "target": "processing-plant-main",
+      "value": 8,
+      "color": "#6B7280",
+      "label": "50 kg",
+      "animationFrequency": 1,
+      "animationRate": 3,
+      "animationSize": 4
+    },
+    {
+      "id": "link-5",
+      "source": "processing-plant-main",
+      "target": "chicken-meat",
+      "value": 18,
+      "color": "#10B981",
+      "label": "1,300 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-6",
+      "source": "processing-plant-main",
+      "target": "fog-to-ad",
+      "value": 12,
+      "color": "#8B5CF6",
+      "label": "200 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-7",
+      "source": "processing-plant-main",
+      "target": "dead-to-ad",
+      "value": 8,
+      "color": "#B45309",
+      "label": "50 birds",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-8",
+      "source": "processing-plant-main",
+      "target": "clean-water",
+      "value": 14,
+      "color": "#22D3EE",
+      "label": "1,800 L",
+      "animationFrequency": 3,
+      "animationRate": 6,
+      "animationSize": 4
+    },
+    {
+      "id": "link-9",
+      "source": "processing-plant-main",
+      "target": "reduced-ghg",
+      "value": 6,
+      "color": "#34D399",
+      "label": "90 kg CO₂",
+      "animationFrequency": 1,
+      "animationRate": 4,
+      "animationSize": 4
+    }
+  ],
+  "config": {
+    "width": 850,
+    "height": 900,
+    "nodePadding": 20,
+    "nodeWidth": 100,
+    "circularLinkGap": 20
+  }
+}

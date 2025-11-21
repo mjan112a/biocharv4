@@ -1,0 +1,111 @@
+{
+  "version": "1.0.0",
+  "name": "Pyrolysis System Detail View",
+  "description": "Detailed flow diagram focused on Pyrolysis System component",
+  "nodes": [
+    {
+      "id": "solid-digestate-input",
+      "name": "Solid Digestate",
+      "x": 100,
+      "y": 250,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/digestate-solids-reduced-volume.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "pyrolysis-system",
+      "name": "Pyrolysis System",
+      "x": 350,
+      "y": 250,
+      "type": "component",
+      "width": 140,
+      "height": 140,
+      "icon": "/images/system-icons/components/pyrolysis-unit.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "biochar-output",
+      "name": "Biochar",
+      "x": 600,
+      "y": 150,
+      "type": "output",
+      "width": 90,
+      "height": 90,
+      "icon": "/images/system-icons/outputs/biochar.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "syngas-output",
+      "name": "Syngas Energy",
+      "x": 600,
+      "y": 290,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/energy/syngas-energy.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "decant-output",
+      "name": "Decant Liquid",
+      "x": 600,
+      "y": 420,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/digestate-liquids.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "digestate-to-pyrolysis",
+      "source": "solid-digestate-input",
+      "target": "pyrolysis-system",
+      "value": 5,
+      "label": "From Digester (70)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "pyrolysis-to-biochar",
+      "source": "pyrolysis-system",
+      "target": "biochar-output",
+      "value": 5,
+      "label": "Carbon Product (50)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "pyrolysis-to-syngas",
+      "source": "pyrolysis-system",
+      "target": "syngas-output",
+      "value": 5,
+      "label": "Combustible Gas (20)",
+      "type": "energy",
+      "animated": true
+    },
+    {
+      "id": "pyrolysis-to-decant",
+      "source": "pyrolysis-system",
+      "target": "decant-output",
+      "value": 5,
+      "label": "To Farm (10)",
+      "type": "material",
+      "animated": true
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-09",
+    "author": "Biochar System Design",
+    "description": "Detailed view of Pyrolysis System inputs and outputs",
+    "tags": ["pyrolysis-system", "detail-view", "component-focus"]
+  }
+}

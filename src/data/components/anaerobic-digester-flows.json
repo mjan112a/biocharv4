@@ -1,0 +1,61 @@
+{
+  "component": {
+    "id": "anaerobic-digester",
+    "name": "Anaerobic Digester",
+    "icon": "anaerobic-digester",
+    "description": "Processes organic waste through anaerobic digestion to produce biogas and digestate"
+  },
+  "inputs": [
+    {
+      "id": "litter-char-input",
+      "name": "Litter & Char",
+      "icon": "litter-char",
+      "value": 80,
+      "unit": "kg/day",
+      "source": "chicken-house"
+    },
+    {
+      "id": "dead-chickens-input",
+      "name": "Dead Chickens",
+      "icon": "dead-chickens",
+      "value": 10,
+      "unit": "kg/day",
+      "source": "chicken-house"
+    },
+    {
+      "id": "offal-fog-input",
+      "name": "Offal / FOG",
+      "icon": "offal-fog",
+      "value": 50,
+      "unit": "kg/day",
+      "source": "processing-plant"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "bio-methane-output",
+      "name": "Bio Methane",
+      "icon": "bio-methane",
+      "value": 40,
+      "unit": "m³/day",
+      "destination": "processing-plant",
+      "type": "energy"
+    },
+    {
+      "id": "digestate-liquids-output",
+      "name": "Digestate Liquids",
+      "icon": "digestate-liquids",
+      "value": 50,
+      "unit": "L/day",
+      "destination": "land-applied"
+    },
+    {
+      "id": "digestate-solids-output",
+      "name": "Digestate Solids",
+      "icon": "digestate-solids-reduced-volume",
+      "value": 50,
+      "unit": "kg/day",
+      "destination": "pyrolysis-unit"
+    }
+  ]
+}

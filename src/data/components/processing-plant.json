@@ -1,0 +1,140 @@
+{
+  "id": "processing-plant",
+  "name": "Processing Plant",
+  "description": "Chicken slaughter, waste disposal, and energy consumption facility",
+  "classification": "Chicken Slaughter, Waste Disposal, Energy Consumption",
+  "keyMetric": {
+    "label": "RNG Value",
+    "value": "Competitive RNG pricing"
+  },
+  "current": {
+    "description": "Traditional processing generates significant waste streams sent to landfill and requires fossil fuel energy",
+    "actions": ["Chicken Slaughter", "Waste Disposal", "Energy Consumption"],
+    "inputs": [
+      {
+        "type": "material",
+        "label": "Live Chickens",
+        "icon": "🐔"
+      },
+      {
+        "type": "energy",
+        "label": "Fossil Fuels",
+        "icon": "🛢️",
+        "emphasis": true
+      },
+      {
+        "type": "energy",
+        "label": "Electricity",
+        "icon": "⚡"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "product",
+        "label": "Meat",
+        "icon": "🍗"
+      },
+      {
+        "type": "waste",
+        "label": "FOG (Fats, Oils, Greases)",
+        "icon": "💧"
+      },
+      {
+        "type": "waste",
+        "label": "Landfill (for FOG)",
+        "amount": "Disposal required",
+        "icon": "🗑️",
+        "emphasis": true,
+        "reduction": true
+      }
+    ],
+    "impacts": {
+      "detriments": ["GHG Emissions (Detriment)"]
+    },
+    "issues": [
+      "High fossil fuel dependency",
+      "FOG disposal costs required",
+      "Greenhouse gas emissions from energy use",
+      "Waste transportation costs"
+    ]
+  },
+  "proposed": {
+    "description": "Integrated waste-to-energy system using FOG for renewable natural gas production",
+    "actions": ["Chicken Slaughter", "Waste Preparation", "Energy Consumption"],
+    "inputs": [
+      {
+        "type": "material",
+        "label": "Live Chickens",
+        "icon": "🐔"
+      },
+      {
+        "type": "energy",
+        "label": "Fossil Fuels (for energy)",
+        "amount": "Reduced usage",
+        "icon": "🛢️"
+      },
+      {
+        "type": "material",
+        "label": "Offal",
+        "icon": "🥩"
+      },
+      {
+        "type": "material",
+        "label": "DAF FOG",
+        "icon": "💧"
+      },
+      {
+        "type": "material",
+        "label": "Other",
+        "icon": "📦"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "product",
+        "label": "Meat",
+        "icon": "🍗"
+      },
+      {
+        "type": "waste",
+        "label": "FOG (Fats, Oils, Greases)",
+        "amount": "To anaerobic digester",
+        "icon": "♻️",
+        "highlight": true
+      },
+      {
+        "type": "energy",
+        "label": "Anaerobic digester (for FOG)",
+        "icon": "⚡",
+        "highlight": true
+      }
+    ],
+    "impacts": {
+      "benefits": [
+        "Reduced landfill",
+        "Energy from pyrolysis"
+      ],
+      "visualReductions": [
+        {
+          "item": "Landfill",
+          "from": "🗑️🗑️🗑️",
+          "to": "⌀",
+          "description": "Complete FOG waste diverted from landfill"
+        }
+      ]
+    },
+    "benefits": [
+      "Complete FOG waste diverted from landfill to energy production",
+      "Competitive revenue from renewable natural gas",
+      "Reduced fossil fuel dependency",
+      "Lower carbon footprint",
+      "Eliminated waste disposal costs"
+    ]
+  },
+  "technicalDetails": {
+    "scale": "Large-scale processing with high daily bird capacity",
+    "fogProduction": "Substantial daily FOG generation",
+    "energyValue": "High methane potential from FOG",
+    "processing": "Slaughter, evisceration, packaging"
+  }
+}

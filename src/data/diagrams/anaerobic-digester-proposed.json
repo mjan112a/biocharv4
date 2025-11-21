@@ -1,0 +1,216 @@
+{
+  "version": "1.0.0",
+  "name": "Anaerobic Digester Detail View",
+  "description": "Detailed flow diagram focused on Anaerobic Digester component",
+  "nodes": [
+    {
+      "id": "litter-char-input",
+      "name": "Litter + Char",
+      "x": 100,
+      "y": 120,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/used-poultry-litter.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "dead-chickens-input",
+      "name": "Dead Chickens",
+      "x": 100,
+      "y": 240,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/dead-chickens.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fog-input",
+      "name": "DAF FOG",
+      "x": 100,
+      "y": 360,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/fog-fats-oils-greases.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "waste-input",
+      "name": "Other Waste",
+      "x": 100,
+      "y": 480,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/waste.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "anaerobic-digester",
+      "name": "Anaerobic Digester",
+      "x": 350,
+      "y": 300,
+      "type": "component",
+      "width": 140,
+      "height": 140,
+      "icon": "/images/system-icons/components/anaerobic-digester.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "bio-methane-output",
+      "name": "Bio-methane",
+      "x": 600,
+      "y": 100,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/energy/bio-methane.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "solid-digestate-output",
+      "name": "Solid Digestate",
+      "x": 600,
+      "y": 220,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/digestate-solids-reduced-volume.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "liquid-digestate-output",
+      "name": "Liquid Digestate",
+      "x": 600,
+      "y": 340,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/digestate-liquids.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "ghg-output",
+      "name": "GHG Emissions",
+      "x": 600,
+      "y": 460,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "nitrogen-output",
+      "name": "Nitrogen Losses",
+      "x": 600,
+      "y": 560,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "litter-to-digester",
+      "source": "litter-char-input",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "From House (80)",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "dead-to-digester",
+      "source": "dead-chickens-input",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "From House (10)",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "fog-to-digester",
+      "source": "fog-input",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "From Plant (40)",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "waste-to-digester",
+      "source": "waste-input",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "From Plant (50)",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "digester-to-pipeline",
+      "source": "anaerobic-digester",
+      "target": "bio-methane-output",
+      "value": 5,
+      "label": "Pipeline Gas (30)",
+      "type": "energy",
+      "animated": true
+    },
+    {
+      "id": "digester-to-solid",
+      "source": "anaerobic-digester",
+      "target": "solid-digestate-output",
+      "value": 5,
+      "label": "To Pyrolysis (70)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "digester-to-liquid",
+      "source": "anaerobic-digester",
+      "target": "liquid-digestate-output",
+      "value": 5,
+      "label": "To Farm (60)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "digester-to-ghg",
+      "source": "anaerobic-digester",
+      "target": "ghg-output",
+      "value": 5,
+      "label": "Emissions (10)",
+      "type": "emission",
+      "animated": false
+    },
+    {
+      "id": "digester-to-nitrogen",
+      "source": "anaerobic-digester",
+      "target": "nitrogen-output",
+      "value": 5,
+      "label": "Losses (5)",
+      "type": "emission",
+      "animated": false
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-09",
+    "author": "Biochar System Design",
+    "description": "Detailed view of Anaerobic Digester inputs and outputs",
+    "tags": ["anaerobic-digester", "detail-view", "component-focus"]
+  }
+}

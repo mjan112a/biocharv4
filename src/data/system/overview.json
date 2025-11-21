@@ -1,0 +1,41 @@
+{
+  "current": {
+    "title": "Current Practice",
+    "description": "9+ billion chickens produced annually in the USA generate 40+ million tonnes of waste. Current disposal methods create environmental liabilities and missed opportunities.",
+    "problems": [
+      "Groundwater contamination from excess nitrogen and phosphorus",
+      "Ammonia emissions harm air quality and worker health",
+      "Methane emissions from decomposing litter (potent GHG)",
+      "Disposal costs $10-30 per tonne",
+      "Regulatory pressure increasing in watersheds",
+      "Unused energy content (15-17 MJ/kg) and valuable nutrients"
+    ]
+  },
+  "proposed": {
+    "title": "Proposed Circular System",
+    "description": "Split-stream processing maximizes value from every component, converting 100% of poultry waste into multiple revenue streams through integrated pyrolysis and anaerobic digestion.",
+    "benefits": [
+      "Net-negative GHG emissions: 370-660 kg CO₂-eq reduction per tonne",
+      "Carbon credits: $177-525 per tonne CO₂",
+      "Biochar sales: $80-1,300 per tonne",
+      "Renewable natural gas: $6-12 per MMBTU with credits",
+      "95% phosphorus recovery, 70% nitrogen recovery",
+      "Energy self-sufficiency through heat recovery",
+      "Zero waste operations with multiple revenue streams"
+    ]
+  },
+  "marketData": {
+    "carbonCredits": {
+      "price": "$177-525/tonne CO₂",
+      "growth": "18% annually",
+      "marketShare": "86-90% of durable CDR market"
+    },
+    "biocharMarket": {
+      "bulk": "$80-150/tonne",
+      "retail": "$600-1,300/tonne",
+      "growth": "$1.3B → $161B by 2050 (91% CAGR)"
+    },
+    "usdaGrants": "$800/tonne through NRCS 336",
+    "wasteVolume": "40+ million tonnes annually (USA)"
+  }
+}

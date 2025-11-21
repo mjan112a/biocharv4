@@ -1,0 +1,174 @@
+{
+  "version": "1.0.0",
+  "name": "Processing Plant Detail View",
+  "description": "Detailed flow diagram focused on Processing Plant component",
+  "nodes": [
+    {
+      "id": "live-chickens-input",
+      "name": "Live Chickens",
+      "x": 100,
+      "y": 150,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/live-chickens.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fossil-fuels-input",
+      "name": "Fossil Fuels",
+      "x": 100,
+      "y": 300,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/energy/renewable-biofuels-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing Plant",
+      "x": 350,
+      "y": 250,
+      "type": "component",
+      "width": 140,
+      "height": 140,
+      "icon": "/images/system-icons/components/processing-plant.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "meat-output",
+      "name": "Meat Products",
+      "x": 600,
+      "y": 80,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/chicken-meat.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "power-output",
+      "name": "Power",
+      "x": 600,
+      "y": 200,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/energy/syngas-energy.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fog-output",
+      "name": "DAF FOG",
+      "x": 600,
+      "y": 300,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/fog-fats-oils-greases.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "waste-output",
+      "name": "Other Waste",
+      "x": 600,
+      "y": 400,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/waste.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "co2-output",
+      "name": "CO2 Emissions",
+      "x": 600,
+      "y": 500,
+      "type": "output",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "chickens-to-plant",
+      "source": "live-chickens-input",
+      "target": "processing-plant",
+      "value": 5,
+      "label": "From House (150)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "fossil-to-plant",
+      "source": "fossil-fuels-input",
+      "target": "processing-plant",
+      "value": 5,
+      "label": "Energy (40)",
+      "type": "energy",
+      "animated": false
+    },
+    {
+      "id": "plant-to-meat",
+      "source": "processing-plant",
+      "target": "meat-output",
+      "value": 5,
+      "label": "Products (30)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "plant-to-power",
+      "source": "processing-plant",
+      "target": "power-output",
+      "value": 5,
+      "label": "Electricity (30)",
+      "type": "energy",
+      "animated": true
+    },
+    {
+      "id": "plant-to-fog",
+      "source": "processing-plant",
+      "target": "fog-output",
+      "value": 5,
+      "label": "To Digester (40)",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "plant-to-waste",
+      "source": "processing-plant",
+      "target": "waste-output",
+      "value": 5,
+      "label": "To Digester (50)",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "plant-to-co2",
+      "source": "processing-plant",
+      "target": "co2-output",
+      "value": 5,
+      "label": "Emissions (15)",
+      "type": "emission",
+      "animated": false
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-09",
+    "author": "Biochar System Design",
+    "description": "Detailed view of Processing Plant inputs and outputs",
+    "tags": ["processing-plant", "detail-view", "component-focus"]
+  }
+}

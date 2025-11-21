@@ -1,0 +1,415 @@
+{
+  "nodes": [
+    {
+      "id": "chicken-house",
+      "name": "Chicken House",
+      "type": "component",
+      "position": "left"
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing Plant",
+      "type": "component",
+      "position": "top"
+    },
+    {
+      "id": "anaerobic-digester",
+      "name": "AD (Anaerobic Digester)",
+      "type": "component",
+      "position": "center"
+    },
+    {
+      "id": "pyrolysis-unit",
+      "name": "Pyrolysis",
+      "type": "component",
+      "position": "right"
+    },
+    {
+      "id": "farm",
+      "name": "Farm / Crops",
+      "type": "component",
+      "position": "bottom-left"
+    },
+    {
+      "id": "land-applied",
+      "name": "Land Applied / Waterways",
+      "type": "component",
+      "position": "bottom-right"
+    },
+    {
+      "id": "fresh-pine-shavings",
+      "name": "Fresh Pine Shavings",
+      "type": "input",
+      "icon": "fresh-pine-shavings"
+    },
+    {
+      "id": "chicken-feed-input",
+      "name": "Chicken Feed",
+      "type": "input",
+      "icon": "chicken-feed"
+    },
+    {
+      "id": "fossil-fuels",
+      "name": "Fossil Fuels",
+      "type": "input",
+      "icon": "fossil-fuel"
+    },
+    {
+      "id": "labor-chicken",
+      "name": "Labor",
+      "type": "input",
+      "icon": "labor"
+    },
+    {
+      "id": "labor-farm",
+      "name": "Labor",
+      "type": "input",
+      "icon": "labor"
+    },
+    {
+      "id": "diesel",
+      "name": "Diesel",
+      "type": "input",
+      "icon": "diesel"
+    },
+    {
+      "id": "litter-char",
+      "name": "Litter & Char",
+      "type": "intermediate",
+      "icon": "litter"
+    },
+    {
+      "id": "dead-chickens",
+      "name": "Dead Chickens",
+      "type": "intermediate",
+      "icon": "dead-chickens"
+    },
+    {
+      "id": "live-chickens",
+      "name": "Live Chickens",
+      "type": "intermediate",
+      "icon": "live-chickens"
+    },
+    {
+      "id": "offal-fog",
+      "name": "Offal / DAF FOG",
+      "type": "intermediate",
+      "icon": "offal"
+    },
+    {
+      "id": "digestate-liquids",
+      "name": "Digestate Liquids",
+      "type": "intermediate",
+      "icon": "digestate-liquids"
+    },
+    {
+      "id": "digestate-solids",
+      "name": "Digestate Solids (Reduced Volume)",
+      "type": "intermediate",
+      "icon": "digestate-solids-reduced-volume"
+    },
+    {
+      "id": "bio-methane",
+      "name": "Bio Methane",
+      "type": "energy",
+      "icon": "bio-methane"
+    },
+    {
+      "id": "syngas",
+      "name": "Syngas / Energy",
+      "type": "energy",
+      "icon": "syngas-energy"
+    },
+    {
+      "id": "biochar",
+      "name": "Biochar",
+      "type": "output",
+      "icon": "biochar"
+    },
+    {
+      "id": "crops",
+      "name": "Crops",
+      "type": "output",
+      "icon": "crops-corn"
+    },
+    {
+      "id": "meat",
+      "name": "Meat",
+      "type": "output",
+      "icon": "chicken-meat"
+    },
+    {
+      "id": "electricity-input",
+      "name": "Electricity",
+      "type": "input",
+      "icon": "electricity"
+    },
+    {
+      "id": "water-input",
+      "name": "Water",
+      "type": "input",
+      "icon": "water"
+    },
+    {
+      "id": "liquid-co2",
+      "name": "Liquefied CO₂",
+      "type": "input",
+      "icon": "co2"
+    },
+    {
+      "id": "ammonia-emissions",
+      "name": "Ammonia Emissions",
+      "type": "output",
+      "icon": "emissions"
+    },
+    {
+      "id": "ghg-emissions-chicken",
+      "name": "GHG Emissions",
+      "type": "output",
+      "icon": "emissions"
+    }
+  ],
+  "flows": [
+    {
+      "source": "fresh-pine-shavings",
+      "target": "chicken-house",
+      "type": "material",
+      "label": "Fresh Pine Shavings",
+      "value": 100
+    },
+    {
+      "source": "chicken-feed-input",
+      "target": "chicken-house",
+      "type": "material",
+      "label": "Chicken Feed",
+      "value": 150
+    },
+    {
+      "source": "labor-chicken",
+      "target": "chicken-house",
+      "type": "input",
+      "label": "Labor",
+      "value": 20
+    },
+    {
+      "source": "fossil-fuels",
+      "target": "chicken-house",
+      "type": "energy",
+      "label": "Fossil Fuels (Heating)",
+      "value": 30
+    },
+    {
+      "source": "water-input",
+      "target": "chicken-house",
+      "type": "material",
+      "label": "Water",
+      "value": 20
+    },
+    {
+      "source": "biochar",
+      "target": "chicken-house",
+      "type": "biochar",
+      "label": "Biochar (circular)",
+      "value": 50,
+      "circular": true
+    },
+    {
+      "source": "chicken-house",
+      "target": "live-chickens",
+      "type": "material",
+      "label": "Live Chickens",
+      "value": 200
+    },
+    {
+      "source": "chicken-house",
+      "target": "dead-chickens",
+      "type": "material",
+      "label": "Dead Chickens",
+      "value": 10
+    },
+    {
+      "source": "chicken-house",
+      "target": "litter-char",
+      "type": "manure",
+      "label": "Litter & Char",
+      "value": 80
+    },
+    {
+      "source": "chicken-house",
+      "target": "ammonia-emissions",
+      "type": "waste",
+      "label": "Ammonia Emissions",
+      "value": 15
+    },
+    {
+      "source": "chicken-house",
+      "target": "ghg-emissions-chicken",
+      "type": "waste",
+      "label": "GHG Emissions",
+      "value": 25
+    },
+    {
+      "source": "live-chickens",
+      "target": "processing-plant",
+      "type": "material",
+      "label": "Chickens to Processing",
+      "value": 200
+    },
+    {
+      "source": "fossil-fuels",
+      "target": "processing-plant",
+      "type": "energy",
+      "label": "Fossil Fuels",
+      "value": 60
+    },
+    {
+      "source": "electricity-input",
+      "target": "processing-plant",
+      "type": "energy",
+      "label": "Electricity",
+      "value": 40
+    },
+    {
+      "source": "liquid-co2",
+      "target": "processing-plant",
+      "type": "material",
+      "label": "Liquefied CO₂",
+      "value": 30
+    },
+    {
+      "source": "bio-methane",
+      "target": "processing-plant",
+      "type": "energy",
+      "label": "Bio Methane (circular)",
+      "value": 40,
+      "circular": true
+    },
+    {
+      "source": "processing-plant",
+      "target": "meat",
+      "type": "material",
+      "label": "Meat Products",
+      "value": 150
+    },
+    {
+      "source": "processing-plant",
+      "target": "offal-fog",
+      "type": "material",
+      "label": "Offal / FOG",
+      "value": 50
+    },
+    {
+      "source": "litter-char",
+      "target": "anaerobic-digester",
+      "type": "manure",
+      "label": "Litter & Char to AD",
+      "value": 80
+    },
+    {
+      "source": "dead-chickens",
+      "target": "anaerobic-digester",
+      "type": "material",
+      "label": "Dead Chickens to AD",
+      "value": 10
+    },
+    {
+      "source": "offal-fog",
+      "target": "anaerobic-digester",
+      "type": "material",
+      "label": "Offal/FOG to AD",
+      "value": 50
+    },
+    {
+      "source": "anaerobic-digester",
+      "target": "bio-methane",
+      "type": "energy",
+      "label": "Bio Methane Production",
+      "value": 40
+    },
+    {
+      "source": "anaerobic-digester",
+      "target": "digestate-liquids",
+      "type": "material",
+      "label": "Digestate Liquids",
+      "value": 50
+    },
+    {
+      "source": "anaerobic-digester",
+      "target": "digestate-solids",
+      "type": "material",
+      "label": "Digestate Solids",
+      "value": 50
+    },
+    {
+      "source": "digestate-solids",
+      "target": "pyrolysis-unit",
+      "type": "material",
+      "label": "Solids to Pyrolysis",
+      "value": 50
+    },
+    {
+      "source": "pyrolysis-unit",
+      "target": "syngas",
+      "type": "energy",
+      "label": "Syngas / Energy",
+      "value": 30
+    },
+    {
+      "source": "pyrolysis-unit",
+      "target": "biochar",
+      "type": "biochar",
+      "label": "Biochar Production",
+      "value": 60
+    },
+    {
+      "source": "biochar",
+      "target": "land-applied",
+      "type": "biochar",
+      "label": "Biochar to Land",
+      "value": 30
+    },
+    {
+      "source": "digestate-liquids",
+      "target": "land-applied",
+      "type": "material",
+      "label": "Digestate Liquids",
+      "value": 50
+    },
+    {
+      "source": "diesel",
+      "target": "farm",
+      "type": "energy",
+      "label": "Diesel",
+      "value": 20
+    },
+    {
+      "source": "labor-farm",
+      "target": "farm",
+      "type": "input",
+      "label": "Labor",
+      "value": 15
+    },
+    {
+      "source": "land-applied",
+      "target": "farm",
+      "type": "material",
+      "label": "Fertilizer Application",
+      "value": 80
+    },
+    {
+      "source": "farm",
+      "target": "crops",
+      "type": "material",
+      "label": "Crop Production",
+      "value": 100
+    },
+    {
+      "source": "crops",
+      "target": "chicken-feed-input",
+      "type": "material",
+      "label": "Crops to Feed (circular)",
+      "value": 50,
+      "circular": true
+    }
+  ]
+}

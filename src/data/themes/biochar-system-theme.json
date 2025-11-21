@@ -1,0 +1,172 @@
+{
+  "id": "biochar-system",
+  "name": "Biochar System",
+  "version": "1.0.0",
+  "description": "Theme based on the poultry biochar system with color-coded components",
+  "defaults": {
+    "node": {
+      "fillColor": "#ffffff",
+      "strokeColor": "#374151",
+      "strokeWidth": 2,
+      "borderRadius": 8,
+      "shape": "rounded-rect",
+      "width": 120,
+      "height": 80,
+      "fontSize": 14,
+      "fontWeight": 600,
+      "textColor": "#1f2937",
+      "shadow": {
+        "enabled": true,
+        "color": "rgba(0, 0, 0, 0.1)",
+        "offset": {
+          "x": 0,
+          "y": 2
+        },
+        "blur": 8
+      },
+      "icon": {
+        "enabled": false,
+        "position": "above",
+        "size": 32
+      }
+    },
+    "link": {
+      "color": "#9ca3af",
+      "thickness": 4,
+      "opacity": 0.6,
+      "curvature": 0.5,
+      "animated": true,
+      "animationSpeed": 2,
+      "gradient": {
+        "enabled": false
+      }
+    },
+    "canvas": {
+      "backgroundColor": "#f9fafb",
+      "gridEnabled": true,
+      "gridColor": "#e5e7eb",
+      "gridSize": 20,
+      "gridPattern": "dots"
+    }
+  },
+  "nodeTypes": {
+    "input": {
+      "fillColor": "#dbeafe",
+      "strokeColor": "#3b82f6",
+      "strokeWidth": 2,
+      "textColor": "#1e40af"
+    },
+    "component": {
+      "fillColor": "#fce7f3",
+      "strokeColor": "#ec4899",
+      "strokeWidth": 2,
+      "textColor": "#9f1239"
+    },
+    "process": {
+      "fillColor": "#fef3c7",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 2,
+      "textColor": "#92400e"
+    },
+    "output": {
+      "fillColor": "#dcfce7",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 2,
+      "textColor": "#166534"
+    },
+    "energy": {
+      "fillColor": "#fef9c3",
+      "strokeColor": "#eab308",
+      "strokeWidth": 2,
+      "textColor": "#713f12"
+    },
+    "waste": {
+      "fillColor": "#fee2e2",
+      "strokeColor": "#ef4444",
+      "strokeWidth": 2,
+      "textColor": "#991b1b"
+    }
+  },
+  "linkTypes": {
+    "material": {
+      "color": "#6366f1",
+      "thickness": 6,
+      "opacity": 0.7
+    },
+    "energy": {
+      "color": "#f59e0b",
+      "thickness": 5,
+      "opacity": 0.7
+    },
+    "waste": {
+      "color": "#ef4444",
+      "thickness": 4,
+      "opacity": 0.6
+    },
+    "water": {
+      "color": "#06b6d4",
+      "thickness": 4,
+      "opacity": 0.7
+    }
+  },
+  "nodeStyles": {},
+  "linkStyles": {},
+  "assets": [
+    {
+      "id": "chicken-house",
+      "type": "svg",
+      "name": "Chicken House",
+      "path": "/images/system-icons/components/chicken-house.png",
+      "category": "components"
+    },
+    {
+      "id": "pyrolysis-unit",
+      "type": "svg",
+      "name": "Pyrolysis Unit",
+      "path": "/images/system-icons/components/pyrolysis-unit.png",
+      "category": "components"
+    },
+    {
+      "id": "anaerobic-digester",
+      "type": "svg",
+      "name": "Anaerobic Digester",
+      "path": "/images/system-icons/components/anaerobic-digester.png",
+      "category": "components"
+    },
+    {
+      "id": "processing-plant",
+      "type": "svg",
+      "name": "Processing Plant",
+      "path": "/images/system-icons/components/processing-plant.png",
+      "category": "components"
+    },
+    {
+      "id": "biochar",
+      "type": "svg",
+      "name": "Biochar",
+      "path": "/images/flow-icons/biochar.svg",
+      "category": "outputs"
+    },
+    {
+      "id": "syngas",
+      "type": "svg",
+      "name": "Syngas",
+      "path": "/images/flow-icons/syngas.svg",
+      "category": "energy"
+    },
+    {
+      "id": "litter",
+      "type": "svg",
+      "name": "Litter",
+      "path": "/images/flow-icons/litter.svg",
+      "category": "materials"
+    },
+    {
+      "id": "chicken-feed",
+      "type": "svg",
+      "name": "Chicken Feed",
+      "path": "/images/flow-icons/chicken-feed.svg",
+      "category": "inputs"
+    }
+  ]
+}

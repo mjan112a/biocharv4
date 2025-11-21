@@ -1,0 +1,122 @@
+{
+  "id": "farm-waterways",
+  "name": "Farm & Waterways",
+  "description": "Agricultural land application and environmental water quality impacts",
+  "classification": "Environmental Impact, Nutrient Management",
+  "keyMetric": {
+    "label": "Nutrient Recovery",
+    "value": "High recovery rates"
+  },
+  "current": {
+    "description": "Traditional litter application leads to nutrient runoff and water quality concerns",
+    "actions": ["Land Application", "Runoff"],
+    "inputs": [
+      {
+        "type": "waste",
+        "label": "Raw Poultry Litter",
+        "icon": "💩",
+        "emphasis": true
+      }
+    ],
+    "outputs": [
+      {
+        "type": "environmental",
+        "label": "Phosphorus Runoff",
+        "icon": "🌊",
+        "emphasis": true
+      },
+      {
+        "type": "environmental",
+        "label": "Nitrogen Runoff",
+        "icon": "💧",
+        "emphasis": true
+      },
+      {
+        "type": "environmental",
+        "label": "Water Contamination",
+        "icon": "⚠️",
+        "emphasis": true
+      }
+    ],
+    "impacts": {
+      "detriments": [
+        "High phosphorus runoff",
+        "High nitrogen runoff",
+        "Algal blooms",
+        "Water quality degradation"
+      ]
+    },
+    "issues": [
+      "Excess nutrient application",
+      "Environmental pollution",
+      "Regulatory compliance challenges",
+      "Water body contamination",
+      "Algal bloom risks"
+    ]
+  },
+  "proposed": {
+    "description": "Integrated nutrient management using biochar-enhanced digestate with controlled release properties",
+    "actions": ["Controlled Application", "Nutrient Recovery"],
+    "inputs": [
+      {
+        "type": "material",
+        "label": "Biochar-Enhanced Digestate",
+        "icon": "♻️",
+        "highlight": true
+      }
+    ],
+    "outputs": [
+      {
+        "type": "environmental",
+        "label": "Improved Soil Health",
+        "icon": "🌱",
+        "highlight": true
+      },
+      {
+        "type": "environmental",
+        "label": "Reduced Runoff",
+        "icon": "💧",
+        "highlight": true
+      },
+      {
+        "type": "environmental",
+        "label": "Clean Waterways",
+        "icon": "🌊",
+        "highlight": true
+      }
+    ],
+    "impacts": {
+      "benefits": [
+        "High phosphorus recovery",
+        "High nitrogen recovery",
+        "Reduced runoff",
+        "Improved water quality",
+        "Enhanced soil carbon",
+        "Better nutrient retention"
+      ],
+      "visualReductions": [
+        {
+          "item": "Nutrient Runoff",
+          "from": "💧💧💧",
+          "to": "💧",
+          "description": "Significant reduction in nutrient runoff to waterways"
+        }
+      ]
+    },
+    "benefits": [
+      "High phosphorus and nitrogen recovery from waste streams",
+      "Biochar improves nutrient retention in soil",
+      "Significant reduction in water pollution",
+      "Controlled nutrient release reduces environmental impact",
+      "Improved crop yields from better soil health",
+      "Meeting environmental regulatory requirements",
+      "Long-term carbon sequestration in agricultural soils"
+    ]
+  },
+  "technicalDetails": {
+    "application": "Precision nutrient management practices",
+    "soilBenefits": "Enhanced water retention, improved structure, increased organic matter",
+    "nutrientRelease": "Slow-release characteristics from biochar-bound nutrients",
+    "environmental": "Reduced leaching and runoff compared to traditional methods"
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Anaerobic Digester - Proposed System (Detailed)",
+    "description": "Detailed view of anaerobic digester converting FOG and organic waste to bio-methane and digestate",
+    "type": "detail",
+    "system": "proposed",
+    "component": "anaerobic-digester"
+  },
+  "nodes": [
+    {
+      "id": "fog-in",
+      "name": "FOG<br/>(from Processing)",
+      "x": 100,
+      "y": 220,
+      "width": 80,
+      "height": 80,
+      "color": "#F59E0B",
+      "icon": "/images/iconslibrary/fog-fats-oils-greases-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "dead-chickens-in",
+      "name": "Dead<br/>Chickens",
+      "x": 100,
+      "y": 350,
+      "width": 80,
+      "height": 80,
+      "color": "#991B1B",
+      "icon": "/images/iconslibrary/dead-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "litter-portion",
+      "name": "Litter<br/>(portion)",
+      "x": 100,
+      "y": 480,
+      "width": 80,
+      "height": 80,
+      "color": "#92400E",
+      "icon": "/images/iconslibrary/used-poultry-litter-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "water-in",
+      "name": "Water",
+      "x": 100,
+      "y": 610,
+      "width": 80,
+      "height": 80,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "anaerobic-digester-main",
+      "name": "Anaerobic<br/>Digester",
+      "x": 350,
+      "y": 400,
+      "width": 180,
+      "height": 150,
+      "color": "#8B5CF6",
+      "icon": "/images/iconslibrary/anaerobic-digester-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "bio-methane",
+      "name": "Bio-Methane<br/>(Energy)",
+      "x": 650,
+      "y": 250,
+      "width": 80,
+      "height": 80,
+      "color": "#8B5CF6",
+      "icon": "/images/iconslibrary/bio-methane-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "digestate-liquid",
+      "name": "Digestate<br/>Liquid",
+      "x": 650,
+      "y": 400,
+      "width": 80,
+      "height": 80,
+      "color": "#059669",
+      "icon": "/images/iconslibrary/digestate-liquids-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "digestate-solid",
+      "name": "Digestate<br/>Solid",
+      "x": 650,
+      "y": 550,
+      "width": 80,
+      "height": 80,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/digestate-solids-reduced-volume-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "fog-in",
+      "target": "anaerobic-digester-main",
+      "value": 14,
+      "color": "#F59E0B",
+      "label": "200 kg",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-2",
+      "source": "dead-chickens-in",
+      "target": "anaerobic-digester-main",
+      "value": 10,
+      "color": "#991B1B",
+      "label": "50 birds",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 4
+    },
+    {
+      "id": "link-3",
+      "source": "litter-portion",
+      "target": "anaerobic-digester-main",
+      "value": 12,
+      "color": "#92400E",
+      "label": "150 kg",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-4",
+      "source": "water-in",
+      "target": "anaerobic-digester-main",
+      "value": 8,
+      "color": "#3B82F6",
+      "label": "500 L",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 4
+    },
+    {
+      "id": "link-5",
+      "source": "anaerobic-digester-main",
+      "target": "bio-methane",
+      "value": 12,
+      "color": "#8B5CF6",
+      "label": "120 kg",
+      "animationFrequency": 2,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-6",
+      "source": "anaerobic-digester-main",
+      "target": "digestate-liquid",
+      "value": 10,
+      "color": "#059669",
+      "label": "200 L",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-7",
+      "source": "anaerobic-digester-main",
+      "target": "digestate-solid",
+      "value": 8,
+      "color": "#10B981",
+      "label": "100 kg",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 4
+    }
+  ],
+  "config": {
+    "width": 850,
+    "height": 850,
+    "nodePadding": 20,
+    "nodeWidth": 100,
+    "circularLinkGap": 20
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "version": "1.0.0",
+  "name": "Biochar Poultry System",
+  "description": "Complete biochar system flow diagram with all components and material flows",
+  "nodes": [
+    {
+      "id": "chicken-feed-input",
+      "name": "Chicken Feed",
+      "x": 50,
+      "y": 200,
+      "type": "input",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/inputs/chicken-feed.svg"
+    },
+    {
+      "id": "water-input",
+      "name": "Water",
+      "x": 50,
+      "y": 300,
+      "type": "input",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/inputs/water.svg"
+    },
+    {
+      "id": "pine-shavings-input",
+      "name": "Pine Shavings",
+      "x": 50,
+      "y": 400,
+      "type": "input",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/inputs/fresh-pine-shavings.svg"
+    },
+    {
+      "id": "co2-input",
+      "name": "CO2 Gas",
+      "x": 50,
+      "y": 500,
+      "type": "input",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/inputs/co2-gas.svg"
+    },
+    {
+      "id": "chicken-house",
+      "name": "Chicken House",
+      "x": 250,
+      "y": 250,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/chicken-house.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing Plant",
+      "x": 450,
+      "y": 150,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/processing-plant.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "pyrolysis-unit",
+      "name": "Pyrolysis Unit",
+      "x": 450,
+      "y": 350,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/pyrolysis-unit.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "anaerobic-digester",
+      "name": "Anaerobic Digester",
+      "x": 650,
+      "y": 250,
+      "type": "component",
+      "width": 120,
+      "height": 120,
+      "icon": "/images/system-icons/components/anaerobic-digester.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "chicken-meat-output",
+      "name": "Chicken Meat",
+      "x": 650,
+      "y": 100,
+      "type": "output",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/chicken-meat.svg"
+    },
+    {
+      "id": "biochar-output",
+      "name": "Biochar",
+      "x": 650,
+      "y": 450,
+      "type": "output",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/biochar.svg"
+    },
+    {
+      "id": "syngas-energy",
+      "name": "Syngas Energy",
+      "x": 450,
+      "y": 500,
+      "type": "energy",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/energy/syngas-energy.svg"
+    },
+    {
+      "id": "bio-methane-energy",
+      "name": "Bio-Methane",
+      "x": 850,
+      "y": 250,
+      "type": "energy",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/energy/bio-methane.svg"
+    },
+    {
+      "id": "digestate-output",
+      "name": "Digestate",
+      "x": 850,
+      "y": 350,
+      "type": "output",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/digestate-liquids.svg"
+    },
+    {
+      "id": "farm-waterways",
+      "name": "Farm Waterways",
+      "x": 850,
+      "y": 150,
+      "type": "output",
+      "width": 120,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/water.svg"
+    }
+  ],
+  "links": [
+    {
+      "id": "feed-to-house",
+      "source": "chicken-feed-input",
+      "target": "chicken-house",
+      "value": 6,
+      "label": "Feed Input",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 4
+    },
+    {
+      "id": "water-to-house",
+      "source": "water-input",
+      "target": "chicken-house",
+      "value": 4,
+      "label": "Water",
+      "type": "water",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 3
+    },
+    {
+      "id": "shavings-to-house",
+      "source": "pine-shavings-input",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Bedding",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 1.5,
+      "particleSize": 4
+    },
+    {
+      "id": "house-to-processing",
+      "source": "chicken-house",
+      "target": "processing-plant",
+      "value": 7,
+      "label": "Live Chickens",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 5
+    },
+    {
+      "id": "processing-to-meat",
+      "source": "processing-plant",
+      "target": "chicken-meat-output",
+      "value": 8,
+      "label": "Meat Product",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 2.5,
+      "particleSize": 5
+    },
+    {
+      "id": "co2-to-processing",
+      "source": "co2-input",
+      "target": "processing-plant",
+      "value": 3,
+      "label": "CO2 Cooling",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 3,
+      "particleSize": 3
+    },
+    {
+      "id": "house-litter-to-pyrolysis",
+      "source": "chicken-house",
+      "target": "pyrolysis-unit",
+      "value": 6,
+      "label": "Used Litter",
+      "type": "waste",
+      "animated": true,
+      "animationSpeed": 1.5,
+      "particleSize": 4
+    },
+    {
+      "id": "processing-to-digester",
+      "source": "processing-plant",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "Offal & FOG",
+      "type": "waste",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 4
+    },
+    {
+      "id": "pyrolysis-to-biochar",
+      "source": "pyrolysis-unit",
+      "target": "biochar-output",
+      "value": 7,
+      "label": "Biochar Product",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 5
+    },
+    {
+      "id": "pyrolysis-to-syngas",
+      "source": "pyrolysis-unit",
+      "target": "syngas-energy",
+      "value": 6,
+      "label": "Syngas",
+      "type": "energy",
+      "animated": true,
+      "animationSpeed": 3,
+      "particleSize": 4
+    },
+    {
+      "id": "pyrolysis-to-digester",
+      "source": "pyrolysis-unit",
+      "target": "anaerobic-digester",
+      "value": 4,
+      "label": "Biochar Addition",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 1.5,
+      "particleSize": 3
+    },
+    {
+      "id": "syngas-to-digester",
+      "source": "syngas-energy",
+      "target": "anaerobic-digester",
+      "value": 3,
+      "label": "Process Heat",
+      "type": "energy",
+      "animated": true,
+      "animationSpeed": 3,
+      "particleSize": 3
+    },
+    {
+      "id": "digester-to-methane",
+      "source": "anaerobic-digester",
+      "target": "bio-methane-energy",
+      "value": 7,
+      "label": "Bio-Methane",
+      "type": "energy",
+      "animated": true,
+      "animationSpeed": 2.5,
+      "particleSize": 4
+    },
+    {
+      "id": "digester-to-digestate",
+      "source": "anaerobic-digester",
+      "target": "digestate-output",
+      "value": 6,
+      "label": "Digestate",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 4
+    },
+    {
+      "id": "digester-to-water",
+      "source": "anaerobic-digester",
+      "target": "farm-waterways",
+      "value": 4,
+      "label": "Treated Water",
+      "type": "water",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 3
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-08",
+    "author": "Biochar System Design",
+    "defaultTheme": "biochar-system",
+    "tags": ["biochar", "poultry", "circular-economy", "waste-to-value"]
+  }
+}

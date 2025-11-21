@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "title": "Chicken House - Current System (Detailed)",
+    "description": "Detailed view of chicken house operations showing all material flows, inputs, and outputs",
+    "type": "detail",
+    "system": "current",
+    "component": "chicken-house"
+  },
+  "nodes": [
+    {
+      "id": "live-chickens-in",
+      "name": "Live<br/>Chickens",
+      "x": 100,
+      "y": 200,
+      "width": 80,
+      "height": 80,
+      "color": "#FFA500",
+      "icon": "/images/iconslibrary/live-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "feed",
+      "name": "Chicken<br/>Feed",
+      "x": 100,
+      "y": 320,
+      "width": 80,
+      "height": 80,
+      "color": "#F59E0B",
+      "icon": "/images/iconslibrary/chicken-feed-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "pine-shavings",
+      "name": "Fresh Pine<br/>Shavings",
+      "x": 100,
+      "y": 440,
+      "width": 80,
+      "height": 80,
+      "color": "#8B7355",
+      "icon": "/images/iconslibrary/fresh-pine-shavings-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "water-in",
+      "name": "Water",
+      "x": 100,
+      "y": 560,
+      "width": 80,
+      "height": 80,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "electricity",
+      "name": "Electricity<br/>(Fossil)",
+      "x": 100,
+      "y": 680,
+      "width": 80,
+      "height": 80,
+      "color": "#DC2626",
+      "icon": "/images/iconslibrary/electricity-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "chicken-house-main",
+      "name": "Chicken<br/>House",
+      "x": 350,
+      "y": 400,
+      "width": 180,
+      "height": 150,
+      "color": "#059669",
+      "icon": "/images/iconslibrary/chicken-house-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "grown-chickens",
+      "name": "Grown<br/>Chickens",
+      "x": 650,
+      "y": 200,
+      "width": 80,
+      "height": 80,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/live-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "used-litter",
+      "name": "Used Poultry<br/>Litter",
+      "x": 650,
+      "y": 350,
+      "width": 80,
+      "height": 80,
+      "color": "#92400E",
+      "icon": "/images/iconslibrary/used-poultry-litter-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "dead-chickens",
+      "name": "Dead<br/>Chickens",
+      "x": 650,
+      "y": 500,
+      "width": 80,
+      "height": 80,
+      "color": "#991B1B",
+      "icon": "/images/iconslibrary/dead-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "ghg-emissions",
+      "name": "GHG<br/>Emissions",
+      "x": 650,
+      "y": 650,
+      "width": 80,
+      "height": 80,
+      "color": "#DC2626",
+      "icon": "/images/iconslibrary/GHG-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "live-chickens-in",
+      "target": "chicken-house-main",
+      "value": 15,
+      "color": "#FFA500",
+      "label": "1,000 birds",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-2",
+      "source": "feed",
+      "target": "chicken-house-main",
+      "value": 20,
+      "color": "#F59E0B",
+      "label": "2,000 kg",
+      "animationFrequency": 4,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-3",
+      "source": "pine-shavings",
+      "target": "chicken-house-main",
+      "value": 12,
+      "color": "#8B7355",
+      "label": "500 kg",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 4
+    },
+    {
+      "id": "link-4",
+      "source": "water-in",
+      "target": "chicken-house-main",
+      "value": 10,
+      "color": "#3B82F6",
+      "label": "1,500 L",
+      "animationFrequency": 3,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-5",
+      "source": "electricity",
+      "target": "chicken-house-main",
+      "value": 8,
+      "color": "#DC2626",
+      "label": "800 kWh",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 4
+    },
+    {
+      "id": "link-6",
+      "source": "chicken-house-main",
+      "target": "grown-chickens",
+      "value": 18,
+      "color": "#10B981",
+      "label": "1,800 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-7",
+      "source": "chicken-house-main",
+      "target": "used-litter",
+      "value": 15,
+      "color": "#713F12",
+      "label": "500 kg",
+      "animationFrequency": 2,
+      "animationRate": 2,
+      "animationSize": 4
+    },
+    {
+      "id": "link-8",
+      "source": "chicken-house-main",
+      "target": "dead-chickens",
+      "value": 6,
+      "color": "#7F1D1D",
+      "label": "50 birds",
+      "animationFrequency": 1,
+      "animationRate": 2,
+      "animationSize": 4
+    },
+    {
+      "id": "link-9",
+      "source": "chicken-house-main",
+      "target": "ghg-emissions",
+      "value": 10,
+      "color": "#991B1B",
+      "label": "200 kg CO₂",
+      "animationFrequency": 4,
+      "animationRate": 3,
+      "animationSize": 3
+    }
+  ],
+  "config": {
+    "width": 850,
+    "height": 900,
+    "nodePadding": 20,
+    "nodeWidth": 100,
+    "circularLinkGap": 20
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "anaerobic-digester",
+  "name": "Anaerobic Digester",
+  "description": "Biological process converting organic waste into renewable natural gas and valuable digestate",
+  "classification": "Anaerobic Digestion, Bio-Methane Capture",
+  "keyMetric": {
+    "label": "Methane Increase",
+    "value": "Increased methane production"
+  },
+  "current": {
+    "description": "This component does not exist in current practice. Waste materials are sent to landfill instead of being processed for energy recovery.",
+    "actions": ["Does not exist in current practice"],
+    "inputs": [],
+    "outputs": [],
+    "impacts": {
+      "detriments": ["Does not exist in current practice"]
+    },
+    "issues": [
+      "No energy recovery from organic waste",
+      "Waste disposal costs",
+      "Lost opportunity for renewable energy generation",
+      "Methane emissions from landfill decomposition"
+    ]
+  },
+  "proposed": {
+    "description": "Modern anaerobic digestion system processing FOG and litter to generate renewable natural gas while recovering valuable nutrients",
+    "actions": ["Anaerobic Digestion", "Bio-Methane Capture"],
+    "inputs": [
+      {
+        "type": "waste",
+        "label": "FOG (from Processing Plant)",
+        "icon": "💧",
+        "highlight": true
+      },
+      {
+        "type": "material",
+        "label": "Litter & Char",
+        "icon": "♻️",
+        "highlight": true
+      }
+    ],
+    "outputs": [
+      {
+        "type": "energy",
+        "label": "Bio-Methane (Renewable Natural Gas)",
+        "icon": "⚡",
+        "highlight": true
+      },
+      {
+        "type": "material",
+        "label": "Digestate (Nutrient-Rich Fertilizer)",
+        "icon": "🌱",
+        "highlight": true
+      }
+    ],
+    "impacts": {
+      "benefits": [
+        "Renewable energy generation",
+        "Nutrient recovery for agriculture",
+        "Waste reduction",
+        "Carbon footprint reduction"
+      ]
+    },
+    "benefits": [
+      "Significantly increased methane production from combining FOG and litter",
+      "Renewable natural gas can power operations or be sold",
+      "Digestate provides valuable organic fertilizer",
+      "Reduced greenhouse gas emissions",
+      "High nutrient recovery from waste streams",
+      "Elimination of waste disposal costs"
+    ]
+  },
+  "technicalDetails": {
+    "process": "Mesophilic or thermophilic anaerobic digestion",
+    "retention": "Standard retention time for optimal digestion",
+    "temperature": "Controlled temperature environment",
+    "outputs": "Renewable natural gas and nutrient-rich digestate"
+  }
+}

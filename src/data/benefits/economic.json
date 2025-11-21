@@ -1,0 +1,97 @@
+{
+  "category": "economic",
+  "title": "Economic Benefits",
+  "description": "Multiple revenue streams from carbon credits, biochar sales, renewable energy, and avoided costs",
+  "items": [
+    {
+      "title": "Carbon Credit Sales",
+      "description": "Biochar represents majority of durable carbon removal market with prices rising annually. Premium projects command top pricing.",
+      "metric": "Valuable carbon credit pricing",
+      "details": [
+        "Competitive market pricing for carbon removal",
+        "Premium projects command higher pricing",
+        "Annual price growth trend",
+        "Large-scale facilities generate substantial annual revenue from credits alone",
+        "Major corporations buying long-term offtake agreements",
+        "Significant CO₂ removed per tonne biochar produced"
+      ]
+    },
+    {
+      "title": "Biochar Sales",
+      "description": "Growing agricultural market with proven ROI. Poultry litter biochar has higher nutrients than wood biochar.",
+      "metric": "Competitive pricing",
+      "details": [
+        "Bulk wholesale pricing available",
+        "Premium retail market pricing",
+        "Agricultural trials show added value",
+        "Quick payback period for farmers",
+        "Rapidly growing market",
+        "Higher nutrient content than wood biochar = premium pricing potential"
+      ]
+    },
+    {
+      "title": "Renewable Natural Gas",
+      "description": "Enhanced methane production with premium pricing through environmental credit programs.",
+      "metric": "Competitive RNG pricing",
+      "details": [
+        "Base RNG price plus premium environmental credits",
+        "D3 RIN credits provide additional revenue",
+        "California LCFS credits add value",
+        "Large facilities generate substantial energy annually",
+        "Smaller operations still produce meaningful energy output",
+        "Significantly more methane than digestion alone"
+      ]
+    },
+    {
+      "title": "Avoided Disposal Costs",
+      "description": "Eliminate waste management expenses while converting liability to asset.",
+      "metric": "Significant savings",
+      "details": [
+        "Disposal costs eliminated",
+        "Large facilities save substantial amounts annually",
+        "Avoided storage and handling costs",
+        "Reduced regulatory compliance expenses",
+        "Eliminated odor complaint management costs"
+      ]
+    },
+    {
+      "title": "Fertilizer Value",
+      "description": "High-value nutrient products replace synthetic fertilizer purchases.",
+      "metric": "Premium nutrient value",
+      "details": [
+        "Avoided synthetic nitrogen costs",
+        "Avoided phosphorus costs",
+        "High phosphorus recovery",
+        "High nitrogen recovery",
+        "Slow-release characteristics = better efficiency",
+        "Grant support available"
+      ]
+    },
+    {
+      "title": "Improved Poultry Performance",
+      "description": "Better air quality and health outcomes translate to significant savings.",
+      "metric": "Reduced mortality",
+      "details": [
+        "Lower mortality from better air quality",
+        "Improved feed conversion ratios",
+        "Reduced foot damage (feet have significant value)",
+        "Premium pricing potential in some markets",
+        "Lower ventilation and heating costs",
+        "Reduced respiratory disease treatment costs"
+      ]
+    },
+    {
+      "title": "Multiple Revenue Streams",
+      "description": "Diversified income reduces risk and maximizes return on investment.",
+      "metric": "Multiple revenue sources",
+      "details": [
+        "Carbon credits + biochar + RNG + fertilizer + grants + savings",
+        "Large facilities have substantial revenue potential",
+        "Reasonable payback period at commercial scale",
+        "Attractive returns depending on configuration",
+        "Offtake agreements secure long-term revenue",
+        "Multiple income streams reduce market risk"
+      ]
+    }
+  ]
+}

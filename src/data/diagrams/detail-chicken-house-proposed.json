@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "title": "Chicken House - Proposed System (Detailed)",
+    "description": "Detailed view of improved chicken house with biochar bedding showing reduced emissions",
+    "type": "detail",
+    "system": "proposed",
+    "component": "chicken-house"
+  },
+  "nodes": [
+    {
+      "id": "live-chickens-in",
+      "name": "Live<br/>Chickens",
+      "x": 100,
+      "y": 180,
+      "width": 80,
+      "height": 80,
+      "color": "#FFA500",
+      "icon": "/images/iconslibrary/live-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "feed",
+      "name": "Chicken<br/>Feed",
+      "x": 100,
+      "y": 290,
+      "width": 80,
+      "height": 80,
+      "color": "#F59E0B",
+      "icon": "/images/iconslibrary/chicken-feed-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "biochar-bedding",
+      "name": "Biochar<br/>Bedding",
+      "x": 100,
+      "y": 400,
+      "width": 80,
+      "height": 80,
+      "color": "#16A34A",
+      "icon": "/images/iconslibrary/biochar-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "water-in",
+      "name": "Water",
+      "x": 100,
+      "y": 510,
+      "width": 80,
+      "height": 80,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/water-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "renewable-energy",
+      "name": "Renewable<br/>Energy<br/>(Syngas)",
+      "x": 100,
+      "y": 620,
+      "width": 80,
+      "height": 80,
+      "color": "#34D399",
+      "icon": "/images/iconslibrary/syngas-energy-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "chicken-house-main",
+      "name": "Chicken<br/>House",
+      "x": 350,
+      "y": 400,
+      "width": 180,
+      "height": 150,
+      "color": "#059669",
+      "icon": "/images/iconslibrary/chicken-house-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "grown-chickens",
+      "name": "Grown<br/>Chickens",
+      "x": 650,
+      "y": 200,
+      "width": 80,
+      "height": 80,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/live-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "litter-char-mix",
+      "name": "Litter+Char<br/>Mix",
+      "x": 650,
+      "y": 350,
+      "width": 80,
+      "height": 80,
+      "color": "#B45309",
+      "icon": "/images/iconslibrary/litter-char-from-chicken-house-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "dead-chickens",
+      "name": "Dead<br/>Chickens",
+      "x": 650,
+      "y": 500,
+      "width": 80,
+      "height": 80,
+      "color": "#EF4444",
+      "icon": "/images/iconslibrary/dead-chickens-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "reduced-emissions",
+      "name": "Reduced<br/>GHG<br/>(-60%)",
+      "x": 650,
+      "y": 650,
+      "width": 80,
+      "height": 80,
+      "color": "#34D399",
+      "icon": "/images/iconslibrary/GHG-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "live-chickens-in",
+      "target": "chicken-house-main",
+      "value": 15,
+      "color": "#FFA500",
+      "label": "1,000 birds",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-2",
+      "source": "feed",
+      "target": "chicken-house-main",
+      "value": 20,
+      "color": "#F59E0B",
+      "label": "2,000 kg",
+      "animationFrequency": 4,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-3",
+      "source": "biochar-bedding",
+      "target": "chicken-house-main",
+      "value": 10,
+      "color": "#16A34A",
+      "label": "150 kg",
+      "animationFrequency": 3,
+      "animationRate": 6,
+      "animationSize": 4
+    },
+    {
+      "id": "link-4",
+      "source": "water-in",
+      "target": "chicken-house-main",
+      "value": 10,
+      "color": "#3B82F6",
+      "label": "1,500 L",
+      "animationFrequency": 3,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-5",
+      "source": "renewable-energy",
+      "target": "chicken-house-main",
+      "value": 8,
+      "color": "#34D399",
+      "label": "800 kWh",
+      "animationFrequency": 4,
+      "animationRate": 8,
+      "animationSize": 5
+    },
+    {
+      "id": "link-6",
+      "source": "chicken-house-main",
+      "target": "grown-chickens",
+      "value": 18,
+      "color": "#10B981",
+      "label": "1,800 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-7",
+      "source": "chicken-house-main",
+      "target": "litter-char-mix",
+      "value": 14,
+      "color": "#B45309",
+      "label": "450 kg",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-8",
+      "source": "chicken-house-main",
+      "target": "dead-chickens",
+      "value": 6,
+      "color": "#EF4444",
+      "label": "50 birds",
+      "animationFrequency": 1,
+      "animationRate": 3,
+      "animationSize": 4
+    },
+    {
+      "id": "link-9",
+      "source": "chicken-house-main",
+      "target": "reduced-emissions",
+      "value": 6,
+      "color": "#34D399",
+      "label": "80 kg CO₂",
+      "animationFrequency": 1,
+      "animationRate": 3,
+      "animationSize": 3
+    }
+  ],
+  "config": {
+    "width": 850,
+    "height": 900,
+    "nodePadding": 20,
+    "nodeWidth": 100,
+    "circularLinkGap": 20
+  }
+}

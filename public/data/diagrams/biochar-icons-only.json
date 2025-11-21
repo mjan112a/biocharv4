@@ -1,0 +1,287 @@
+{
+  "version": "1.0.0",
+  "name": "Biochar System (Icons Only)",
+  "description": "Biochar flow diagram using only SVG icons without backgrounds",
+  "nodes": [
+    {
+      "id": "chicken-house",
+      "name": "Chicken House",
+      "x": 200,
+      "y": 250,
+      "type": "component",
+      "width": 100,
+      "height": 100,
+      "icon": "/images/system-icons/components/chicken-house.svg",
+      "iconOnly": true,
+      "showLabel": true,
+      "tooltip": {
+        "title": "Chicken House",
+        "description": "Primary poultry production facility where chickens are raised and litter is generated"
+      },
+      "details": {
+        "description": "Modern chicken house with climate control and automated feeding systems. Generates both live chickens for processing and used poultry litter for biochar conversion.",
+        "capacity": "50,000 birds per cycle",
+        "efficiency": "95% survival rate",
+        "outputs": ["Live chickens (6 tons/day)", "Used litter (5 tons/day)"]
+      }
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing",
+      "x": 400,
+      "y": 150,
+      "type": "component",
+      "width": 100,
+      "height": 100,
+      "icon": "/images/system-icons/components/processing-plant.svg",
+      "iconOnly": true,
+      "showLabel": true,
+      "tooltip": {
+        "title": "Processing Plant",
+        "description": "Poultry processing facility that converts live chickens into meat products"
+      },
+      "details": {
+        "description": "USDA-certified processing plant with waste segregation systems. Produces chicken meat products while generating organic waste streams for biogas production.",
+        "capacity": "6 tons/day live weight",
+        "efficiency": "85% meat yield",
+        "outputs": ["Chicken meat (4 tons/day)", "Offal waste (5 tons/day)"]
+      }
+    },
+    {
+      "id": "pyrolysis-unit",
+      "name": "Pyrolysis",
+      "x": 400,
+      "y": 350,
+      "type": "component",
+      "width": 100,
+      "height": 100,
+      "icon": "/images/system-icons/components/pyrolysis-unit.svg",
+      "iconOnly": true,
+      "showLabel": true,
+      "tooltip": {
+        "title": "Pyrolysis Unit",
+        "description": "Thermal conversion system that transforms litter into biochar, syngas, and bio-oils"
+      },
+      "details": {
+        "description": "Advanced pyrolysis reactor operating at 500-700°C in oxygen-limited environment. Converts organic waste into stable biochar while capturing valuable energy products.",
+        "capacity": "5 tons/day litter input",
+        "efficiency": "92% carbon conversion",
+        "outputs": ["Biochar (7 tons/day)", "Syngas (6 GJ/day)", "Bio-oils (4 tons/day)"]
+      }
+    },
+    {
+      "id": "anaerobic-digester",
+      "name": "Digester",
+      "x": 600,
+      "y": 250,
+      "type": "component",
+      "width": 100,
+      "height": 100,
+      "icon": "/images/system-icons/components/anaerobic-digester.svg",
+      "iconOnly": true,
+      "showLabel": true,
+      "tooltip": {
+        "title": "Anaerobic Digester",
+        "description": "Biogas production system that processes organic waste into renewable energy"
+      },
+      "details": {
+        "description": "Mesophilic anaerobic digestion system enhanced with biochar additives for improved efficiency. Processes organic waste streams while generating renewable biogas.",
+        "capacity": "9 tons/day organic input",
+        "efficiency": "85% biogas yield",
+        "outputs": ["Biogas (8 GJ/day)", "Digestate (6 tons/day)"]
+      }
+    },
+    {
+      "id": "biochar-output",
+      "name": "Biochar",
+      "x": 600,
+      "y": 450,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/biochar.svg",
+      "iconOnly": true,
+      "showLabel": true,
+      "tooltip": {
+        "title": "Biochar Output",
+        "description": "Stable carbon product used as soil amendment and livestock additive"
+      },
+      "details": {
+        "description": "High-quality biochar with enhanced properties for agricultural and livestock applications. Carbon-negative product that improves soil health and reduces emissions.",
+        "output": "7 tons/day",
+        "properties": "High porosity, pH 8-9, 70% fixed carbon",
+        "applications": ["Soil amendment", "Livestock feed additive", "Water filtration"]
+      }
+    },
+    {
+      "id": "syngas-energy",
+      "name": "Syngas",
+      "x": 400,
+      "y": 500,
+      "type": "energy",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/energy/syngas-energy.svg",
+      "iconOnly": true,
+      "showLabel": true,
+      "tooltip": {
+        "title": "Syngas Energy",
+        "description": "Renewable fuel gas produced during pyrolysis, used for process heat"
+      },
+      "details": {
+        "description": "Clean-burning synthesis gas (syngas) composed primarily of hydrogen, carbon monoxide, and methane. Used to provide process heat for digestion and other operations.",
+        "output": "6 GJ/day",
+        "composition": "H2: 35%, CO: 40%, CH4: 15%, CO2: 10%",
+        "applications": ["Process heating", "Electricity generation", "Thermal energy"]
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "house-to-processing",
+      "source": "chicken-house",
+      "target": "processing-plant",
+      "value": 6,
+      "label": "Live Chickens",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 5,
+      "tooltip": {
+        "title": "Live Chicken Transport",
+        "description": "Transfer of market-ready chickens to processing facility"
+      },
+      "details": {
+        "description": "Live chickens transported from house to processing plant at optimal weight (2.5-3 kg per bird). Transport uses climate-controlled vehicles to ensure animal welfare.",
+        "flowRate": "6 tons/day",
+        "composition": ["Market-weight chickens", "Average 2.7 kg/bird", "~2,200 birds/day"]
+      }
+    },
+    {
+      "id": "house-to-pyrolysis",
+      "source": "chicken-house",
+      "target": "pyrolysis-unit",
+      "value": 5,
+      "label": "Litter",
+      "type": "waste",
+      "animated": true,
+      "animationSpeed": 1.5,
+      "particleSize": 4,
+      "tooltip": {
+        "title": "Used Litter Transport",
+        "description": "Collection of spent bedding material containing manure for biochar conversion"
+      },
+      "details": {
+        "description": "Used poultry litter consisting of pine shavings mixed with chicken manure and feathers. Collected after each growth cycle and transported to pyrolysis unit.",
+        "flowRate": "5 tons/day",
+        "composition": ["Pine shavings (40%)", "Chicken manure (55%)", "Feathers and debris (5%)"]
+      }
+    },
+    {
+      "id": "processing-to-digester",
+      "source": "processing-plant",
+      "target": "anaerobic-digester",
+      "value": 5,
+      "label": "Offal",
+      "type": "waste",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 4,
+      "tooltip": {
+        "title": "Offal Waste Stream",
+        "description": "Non-meat organic waste from poultry processing"
+      },
+      "details": {
+        "description": "Offal waste including organs, blood, feathers, and other organic materials removed during processing. High-energy substrate ideal for biogas production.",
+        "flowRate": "5 tons/day",
+        "composition": ["Organs (30%)", "Blood (25%)", "Feathers (20%)", "Fat and tissue (25%)"]
+      }
+    },
+    {
+      "id": "pyrolysis-to-biochar",
+      "source": "pyrolysis-unit",
+      "target": "biochar-output",
+      "value": 7,
+      "label": "Biochar",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 2,
+      "particleSize": 5,
+      "tooltip": {
+        "title": "Biochar Production",
+        "description": "Primary stable carbon product from pyrolysis process"
+      },
+      "details": {
+        "description": "High-quality biochar product with porous structure and high carbon content. Ready for agricultural applications or further processing into livestock feed additives.",
+        "flowRate": "7 tons/day",
+        "composition": ["Fixed carbon (70%)", "Ash content (15%)", "Volatile matter (10%)", "Moisture (5%)"]
+      }
+    },
+    {
+      "id": "pyrolysis-to-syngas",
+      "source": "pyrolysis-unit",
+      "target": "syngas-energy",
+      "value": 6,
+      "label": "Syngas",
+      "type": "energy",
+      "animated": true,
+      "animationSpeed": 3,
+      "particleSize": 4,
+      "tooltip": {
+        "title": "Syngas Generation",
+        "description": "Renewable fuel gas produced as byproduct of pyrolysis"
+      },
+      "details": {
+        "description": "Clean-burning syngas captured from pyrolysis vapors. Provides renewable energy for digester heating and other process requirements.",
+        "flowRate": "6 GJ/day energy content",
+        "composition": ["H2 (35%)", "CO (40%)", "CH4 (15%)", "CO2 (10%)"]
+      }
+    },
+    {
+      "id": "pyrolysis-to-digester",
+      "source": "pyrolysis-unit",
+      "target": "anaerobic-digester",
+      "value": 4,
+      "label": "Biochar Add",
+      "type": "material",
+      "animated": true,
+      "animationSpeed": 1.5,
+      "particleSize": 3,
+      "tooltip": {
+        "title": "Biochar Addition",
+        "description": "Biochar additive to enhance digestion efficiency"
+      },
+      "details": {
+        "description": "Finely ground biochar added to anaerobic digester to improve microbial activity and biogas production. Provides surface area for beneficial bacteria and buffers pH.",
+        "flowRate": "4 tons/day",
+        "composition": ["Fine biochar particles", "Particle size: 0.5-2mm", "High surface area"]
+      }
+    },
+    {
+      "id": "syngas-to-digester",
+      "source": "syngas-energy",
+      "target": "anaerobic-digester",
+      "value": 3,
+      "label": "Heat",
+      "type": "energy",
+      "animated": true,
+      "animationSpeed": 3,
+      "particleSize": 3,
+      "tooltip": {
+        "title": "Process Heat",
+        "description": "Thermal energy from syngas combustion for digester temperature control"
+      },
+      "details": {
+        "description": "Heat generated from syngas combustion maintains optimal mesophilic temperature (35-40°C) in anaerobic digester. Ensures consistent biogas production year-round.",
+        "flowRate": "3 GJ/day thermal energy",
+        "composition": ["Combustion heat", "Temperature maintenance", "Process optimization"]
+      }
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-08",
+    "author": "Biochar System Design",
+    "description": "Simplified biochar flow using icon-only mode for clean visualization",
+    "tags": ["biochar", "icons-only", "clean-design"]
+  }
+}

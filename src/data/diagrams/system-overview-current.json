@@ -1,0 +1,273 @@
+{
+  "metadata": {
+    "title": "Current Poultry System",
+    "description": "Traditional linear system with waste disposal challenges",
+    "type": "circular-sankey",
+    "system": "current"
+  },
+  "nodes": [
+    {
+      "id": "chicken-house",
+      "name": "Chicken<br/>House",
+      "x": 193.22799097065462,
+      "y": 369.76267656494065,
+      "width": 150,
+      "height": 150,
+      "color": "#059669",
+      "icon": "/images/iconslibrary/chicken-house-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing<br/>Plant",
+      "x": 445.82392776523704,
+      "y": 296.4527452594099,
+      "width": 150,
+      "height": 150,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/processing-plant-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "farms",
+      "name": "Farms",
+      "x": 423.47629796839715,
+      "y": 514.1890189623607,
+      "width": 165,
+      "height": 150,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/farm-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "waterways",
+      "name": "Waterways",
+      "x": 803.9879608728367,
+      "y": 455.6593157426224,
+      "width": 145,
+      "height": 150,
+      "color": "#06B6D4",
+      "icon": "/images/iconslibrary/waterways-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "node-1762906849726-ydgxaa3iy",
+      "name": "Fresh Pine Shavings",
+      "x": 65.58314522197142,
+      "y": 309.54500411494996,
+      "color": "#3B82F6",
+      "width": 61,
+      "height": 62,
+      "icon": "/images/iconslibrary/fresh-pine-shavings-01.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "node-1762906939128-560b5f1un",
+      "name": "Chicken Feed",
+      "x": 88.15650865312261,
+      "y": 531.839634525269,
+      "color": "#3B82F6",
+      "width": 40,
+      "height": 50,
+      "icon": "/images/iconslibrary/chicken-feed-01.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "node-1762907001772-sj4jw2ps3",
+      "name": "Crops",
+      "x": 862.0459223754735,
+      "y": 650.8220766095105,
+      "color": "#3B82F6",
+      "width": 58,
+      "height": 62,
+      "iconOnly": true,
+      "icon": "/images/iconslibrary/crops-corn-01.svg"
+    },
+    {
+      "id": "node-1762908466817-wjyrkwwqe",
+      "name": "Fossil Fuels",
+      "x": 360.4589917231001,
+      "y": 234.46144543912396,
+      "color": "#3B82F6",
+      "width": 56,
+      "height": 50,
+      "icon": "/images/iconslibrary/fossil-fuels-01.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "node-1762908596904-k26e2e9j4",
+      "name": "Electricity",
+      "x": 267.9082016553799,
+      "y": 285.8966391776819,
+      "color": "#3B82F6",
+      "width": 51,
+      "height": 50,
+      "iconOnly": true,
+      "icon": "/images/iconslibrary/electricity-01.svg"
+    },
+    {
+      "id": "node-1762908829431-dija8dnti",
+      "name": "Meat",
+      "x": 817.9458239277652,
+      "y": 245.10320966089458,
+      "color": "#3B82F6",
+      "width": 65,
+      "height": 50,
+      "iconOnly": true,
+      "icon": "/images/iconslibrary/chicken-meat-01.svg"
+    },
+    {
+      "id": "node-1762908901805-28nu0gsy8",
+      "name": "Fats Oils Greases",
+      "x": 861.5876598946576,
+      "y": 336.7406237928081,
+      "color": "#3B82F6",
+      "width": 51,
+      "height": 50,
+      "icon": "/images/iconslibrary/fog-fats-oils-greases-01.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "node-1763074965129-jp2zet6ua",
+      "name": "Greenhouse Gases",
+      "x": 642.6260346124906,
+      "y": 463.8505853306236,
+      "color": "#3B82F6",
+      "width": 40,
+      "height": 50,
+      "iconOnly": true,
+      "icon": "/images/iconslibrary/GHG-01.svg"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "chicken-house",
+      "target": "processing-plant",
+      "value": 6,
+      "color": "#059669",
+      "label": "Live Birds",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 10,
+      "particleIconSource": "custom",
+      "particleType": "icon",
+      "particleIcon": "/images/iconslibrary/live-chickens-01.svg"
+    },
+    {
+      "id": "link-2",
+      "source": "chicken-house",
+      "target": "farms",
+      "value": 15,
+      "color": "#92400E",
+      "label": "Waste Litter",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 4,
+      "particleIconSource": "dot"
+    },
+    {
+      "id": "link-3",
+      "source": "processing-plant",
+      "target": "waterways",
+      "value": 12,
+      "color": "#DC2626",
+      "label": "Wastewater",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4,
+      "particleIconSource": "dot"
+    },
+    {
+      "id": "link-4",
+      "source": "farms",
+      "target": "waterways",
+      "value": 10,
+      "color": "#F59E0B",
+      "label": "Nutrient Runoff",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 4,
+      "particleIconSource": "custom",
+      "particleType": "icon",
+      "particleIcon": "/images/iconslibrary/fertilizer-01.svg"
+    },
+    {
+      "id": "link-1762906887635-lia27rnml",
+      "source": "node-1762906849726-ydgxaa3iy",
+      "target": "chicken-house",
+      "value": 10,
+      "color": "#EAB308"
+    },
+    {
+      "id": "link-1762906977174-dk8o8x0oy",
+      "source": "farms",
+      "target": "node-1762906939128-560b5f1un",
+      "value": 10,
+      "color": "#EAB308",
+      "returnY": 681.169065654445
+    },
+    {
+      "id": "link-1762907044048-6i5mkre74",
+      "source": "farms",
+      "target": "node-1762907001772-sj4jw2ps3",
+      "value": 10,
+      "color": "#10B981"
+    },
+    {
+      "id": "link-1762907063416-r5z65z7m9",
+      "source": "node-1762906939128-560b5f1un",
+      "target": "chicken-house",
+      "value": 10,
+      "color": "#EAB308"
+    },
+    {
+      "id": "link-1762908512969-cxo91akac",
+      "source": "node-1762908466817-wjyrkwwqe",
+      "target": "processing-plant",
+      "value": 10,
+      "color": "#6B7280"
+    },
+    {
+      "id": "link-1762908619891-teg8yzeox",
+      "source": "node-1762908596904-k26e2e9j4",
+      "target": "processing-plant",
+      "value": 10,
+      "color": "#6B7280"
+    },
+    {
+      "id": "link-1762908859077-wi02oxhow",
+      "source": "processing-plant",
+      "target": "node-1762908829431-dija8dnti",
+      "value": 8,
+      "color": "#6B7280",
+      "animationRate": 3,
+      "animationFrequency": 3
+    },
+    {
+      "id": "link-1762908943108-e6j8ddz88",
+      "source": "processing-plant",
+      "target": "node-1762908901805-28nu0gsy8",
+      "value": 10,
+      "color": "#685a27"
+    },
+    {
+      "id": "link-1763075028504-7h8n22wi0",
+      "source": "farms",
+      "target": "node-1763074965129-jp2zet6ua",
+      "value": 10,
+      "color": "#6B7280"
+    }
+  ],
+  "config": {
+    "width": 900,
+    "height": 800,
+    "nodePadding": 20,
+    "nodeWidth": 180,
+    "circularLinkGap": 20
+  }
+}

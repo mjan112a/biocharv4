@@ -1,0 +1,81 @@
+{
+  "id": "pyrolysis-unit",
+  "name": "Pyrolysis Unit",
+  "description": "Thermal conversion process producing biochar, syngas energy, and carbon sequestration",
+  "classification": "Pyrolysis, Biochar Production, Carbon Sequestration",
+  "keyMetric": {
+    "label": "Carbon Sequestration",
+    "value": "Significant carbon storage"
+  },
+  "current": {
+    "description": "This component does not exist in current practice. Digestate would typically be land-applied without additional processing.",
+    "actions": ["Does not exist in current practice"],
+    "inputs": [],
+    "outputs": [],
+    "impacts": {
+      "detriments": ["Does not exist in current practice"]
+    },
+    "issues": [
+      "No carbon sequestration",
+      "No biochar production for soil amendment",
+      "No energy recovery from residual organics",
+      "Limited value extraction from digestate"
+    ]
+  },
+  "proposed": {
+    "description": "Advanced pyrolysis system converting digestate into valuable biochar for circular use while capturing energy and sequestering carbon",
+    "actions": ["Pyrolysis", "Biochar Production", "Carbon Sequestration"],
+    "inputs": [
+      {
+        "type": "material",
+        "label": "Digestate (from Anaerobic Digester)",
+        "icon": "🌱",
+        "highlight": true
+      }
+    ],
+    "outputs": [
+      {
+        "type": "biochar",
+        "label": "Biochar",
+        "amount": "For chicken house bedding",
+        "icon": "⚫",
+        "highlight": true
+      },
+      {
+        "type": "energy",
+        "label": "Syngas (Energy)",
+        "icon": "🔥",
+        "highlight": true
+      },
+      {
+        "type": "environmental",
+        "label": "Carbon Sequestration",
+        "icon": "🌍",
+        "highlight": true
+      }
+    ],
+    "impacts": {
+      "benefits": [
+        "Long-term carbon storage",
+        "Renewable energy generation",
+        "Circular biochar production",
+        "Waste valorization"
+      ]
+    },
+    "benefits": [
+      "Significant carbon sequestration per ton of biochar produced",
+      "Biochar returns to chicken houses, closing the circular loop",
+      "Syngas energy can power operations",
+      "Valuable carbon credits potential",
+      "Grant support available",
+      "Long-term soil improvement benefits",
+      "Reduced ammonia emissions when used in poultry operations"
+    ]
+  },
+  "technicalDetails": {
+    "process": "Slow pyrolysis under controlled oxygen-limited conditions",
+    "temperature": "Moderate to high temperature processing",
+    "outputs": "Biochar, syngas, and minimal ash residue",
+    "carbonStability": "Highly stable carbon suitable for long-term sequestration"
+  }
+}

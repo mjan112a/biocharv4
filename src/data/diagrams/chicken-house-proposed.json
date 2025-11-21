@@ -1,0 +1,153 @@
+{
+  "version": "1.0.0",
+  "name": "Chicken House Detail View",
+  "description": "Detailed flow diagram focused on Chicken House component",
+  "nodes": [
+    {
+      "id": "fresh-pine-shavings",
+      "name": "Fresh Pine Shavings",
+      "x": 100,
+      "y": 100,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/inputs/fresh-pine-shavings.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "biochar-input",
+      "name": "Biochar",
+      "x": 100,
+      "y": 250,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/biochar.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "labor-input",
+      "name": "Labor",
+      "x": 100,
+      "y": 400,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "chicken-house",
+      "name": "Chicken House",
+      "x": 350,
+      "y": 250,
+      "type": "component",
+      "width": 140,
+      "height": 140,
+      "icon": "/images/system-icons/components/chicken-house.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "live-chickens-output",
+      "name": "Live Chickens",
+      "x": 600,
+      "y": 150,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/live-chickens.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "litter-char-output",
+      "name": "Litter + Char",
+      "x": 600,
+      "y": 280,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/used-poultry-litter.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "dead-chickens-output",
+      "name": "Dead Chickens",
+      "x": 600,
+      "y": 410,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/intermediate/dead-chickens.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "pine-to-house",
+      "source": "fresh-pine-shavings",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Bedding (100)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "biochar-to-house",
+      "source": "biochar-input",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Recycled Biochar (50)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "labor-to-house",
+      "source": "labor-input",
+      "target": "chicken-house",
+      "value": 5,
+      "label": "Operations (20)",
+      "type": "support",
+      "animated": false
+    },
+    {
+      "id": "house-to-live-chickens",
+      "source": "chicken-house",
+      "target": "live-chickens-output",
+      "value": 5,
+      "label": "To Processing (150)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "house-to-litter",
+      "source": "chicken-house",
+      "target": "litter-char-output",
+      "value": 5,
+      "label": "To Digester (80)",
+      "type": "waste",
+      "animated": true
+    },
+    {
+      "id": "house-to-dead",
+      "source": "chicken-house",
+      "target": "dead-chickens-output",
+      "value": 5,
+      "label": "To Digester (10)",
+      "type": "waste",
+      "animated": true
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-09",
+    "author": "Biochar System Design",
+    "description": "Detailed view of Chicken House inputs and outputs",
+    "tags": ["chicken-house", "detail-view", "component-focus"]
+  }
+}

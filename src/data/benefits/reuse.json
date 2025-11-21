@@ -1,0 +1,85 @@
+{
+  "category": "reuse",
+  "title": "Circular Economy & Reuse",
+  "description": "Complete material recovery and circular flows create self-sustaining operations with zero waste",
+  "items": [
+    {
+      "title": "Energy Self-Sufficiency",
+      "description": "Integrated heat recovery achieves thermal self-sufficiency through cascading energy use.",
+      "metric": "Energy self-sufficient",
+      "details": [
+        "Syngas combustion provides pyrolysis heat at high temperature",
+        "Excess heat dries incoming litter to low moisture content",
+        "Low-grade heat maintains optimal digester temperature",
+        "Positive net energy output ratio",
+        "Biogas powers farm operations",
+        "Thermal self-sufficiency with proper moisture management"
+      ]
+    },
+    {
+      "title": "Biochar Returns to Farm",
+      "description": "Biochar produced from waste returns to poultry houses as bedding additive, closing the loop.",
+      "metric": "Small proportion bedding addition",
+      "details": [
+        "Used as poultry bedding additive",
+        "Significant ammonia reduction in houses",
+        "Improves bird health and performance",
+        "Chickens consume some, improving gut health",
+        "Acts as moisture manager (sponge effect)",
+        "Enhanced litter eligible for grant support"
+      ]
+    },
+    {
+      "title": "Complete Nutrient Cycling",
+      "description": "All nutrients recovered and returned to agricultural use in optimized forms.",
+      "metric": "High P and N recovery",
+      "details": [
+        "Biochar preserves most phosphorus",
+        "Digestate contains remaining nitrogen",
+        "Slow-release characteristics improve efficiency",
+        "No synthetic fertilizer needed",
+        "Nutrients stay in agricultural cycle",
+        "Minimal environmental loss"
+      ]
+    },
+    {
+      "title": "Synergistic Integration",
+      "description": "Components work together to create benefits exceeding sum of parts.",
+      "metric": "Significant methane boost",
+      "details": [
+        "Pyrolysis syngas enhances digestion substantially",
+        "Biochar addition significantly boosts methane production",
+        "Heat from one process powers another",
+        "Each waste stream becomes another's input",
+        "Unexpected benefits from integration",
+        "System-level optimization impossible with standalone units"
+      ]
+    },
+    {
+      "title": "Zero Waste Operations",
+      "description": "Every input completely utilized with no disposal requirements or environmental releases.",
+      "metric": "Complete material utilization",
+      "details": [
+        "Litter → Biochar + RNG + Fertilizer",
+        "No stockpiling or disposal needed",
+        "All outputs have market value",
+        "Converted liability to multiple assets",
+        "Eliminated waste management costs",
+        "Showcase of environmental stewardship"
+      ]
+    },
+    {
+      "title": "Scalable Model",
+      "description": "System scales from individual farms to centralized regional facilities.",
+      "metric": "Flexible scale range",
+      "details": [
+        "Farm-scale operations possible",
+        "Regional facilities viable",
+        "Commercial-scale deployment proven",
+        "Mobile service models possible",
+        "Distributed or centralized deployment",
+        "Flexibility matches market needs"
+      ]
+    }
+  ]
+}

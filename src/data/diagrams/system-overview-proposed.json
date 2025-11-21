@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "title": "Proposed Biochar System",
+    "description": "Circular economy with biochar, renewable energy, and zero waste",
+    "type": "circular-sankey",
+    "system": "proposed"
+  },
+  "nodes": [
+    {
+      "id": "chicken-house",
+      "name": "Chicken<br/>House",
+      "x": 249.32279909706548,
+      "y": 377.3627370295101,
+      "width": 145,
+      "height": 150,
+      "color": "#059669",
+      "icon": "/images/iconslibrary/chicken-house-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "processing-plant",
+      "name": "Processing<br/>Plant",
+      "x": 520.7298720842739,
+      "y": 264.4417944540553,
+      "width": 147,
+      "height": 150,
+      "color": "#3B82F6",
+      "icon": "/images/iconslibrary/processing-plant-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "anaerobic-digester",
+      "name": "Anaerobic<br/>Digester",
+      "x": 777.5395033860046,
+      "y": 304.22412200406467,
+      "width": 143,
+      "height": 150,
+      "color": "#8B5CF6",
+      "icon": "/images/iconslibrary/anaerobic-digester-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "pyrolysis-unit",
+      "name": "Pyrolysis<br/>Unit",
+      "x": 480.8502633559068,
+      "y": 424.23957406069974,
+      "width": 152,
+      "height": 150,
+      "color": "#F59E0B",
+      "icon": "/images/iconslibrary/pyrolysis-unit-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "farms",
+      "name": "Farms",
+      "x": 739.9172310007525,
+      "y": 524.9164413241741,
+      "width": 146,
+      "height": 150,
+      "color": "#10B981",
+      "icon": "/images/iconslibrary/farm-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "waterways",
+      "name": "Waterways",
+      "x": 957.7426636568849,
+      "y": 453.97134651237013,
+      "width": 145,
+      "height": 150,
+      "color": "#06B6D4",
+      "icon": "/images/iconslibrary/waterways-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "node-1763075273093-thqm5fxhd",
+      "name": "Fresh Pine Shavings",
+      "x": 154.53348382242285,
+      "y": 289.19111842657753,
+      "color": "#3B82F6",
+      "width": 40,
+      "height": 50,
+      "icon": "/images/iconslibrary/fresh-pine-shavings-01.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "node-1763075430022-d9ge2ocmd",
+      "name": "Chicken Feed",
+      "x": 177.85929270127914,
+      "y": 581.839634525269,
+      "color": "#3B82F6",
+      "width": 41,
+      "height": 50,
+      "icon": "/images/iconslibrary/chicken-feed-01.svg",
+      "iconOnly": true
+    },
+    {
+      "id": "node-1763078168012-sm0xqvor3",
+      "name": "Offal",
+      "x": 693.2844243792325,
+      "y": 260.813080501856,
+      "color": "#3B82F6",
+      "width": 51,
+      "height": 50,
+      "iconOnly": true,
+      "icon": "/images/iconslibrary/other-waste-01.svg"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "chicken-house",
+      "target": "processing-plant",
+      "value": 25,
+      "color": "#059669",
+      "label": "Live Birds",
+      "animationFrequency": 3,
+      "animationRate": 5,
+      "animationSize": 4,
+      "particleIconSource": "dot"
+    },
+    {
+      "id": "link-2",
+      "source": "chicken-house",
+      "target": "pyrolysis-unit",
+      "value": 12,
+      "color": "#92400E",
+      "label": "Litter",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4,
+      "particleIconSource": "dot"
+    },
+    {
+      "id": "link-3",
+      "source": "processing-plant",
+      "target": "anaerobic-digester",
+      "value": 10,
+      "color": "#F59E0B",
+      "label": "Fats/Oils/Greases",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4,
+      "particleIconSource": "dot"
+    },
+    {
+      "id": "link-4",
+      "source": "anaerobic-digester",
+      "target": "farms",
+      "value": 8,
+      "color": "#84d7bb",
+      "label": "Digestate",
+      "animationFrequency": 9,
+      "animationRate": 3,
+      "animationSize": 11,
+      "particleIconSource": "custom",
+      "returnY": 713.1954685164346,
+      "particleType": "icon",
+      "particleIcon": "/images/iconslibrary/digestate-liquids-01.svg"
+    },
+    {
+      "id": "link-5",
+      "source": "pyrolysis-unit",
+      "target": "farms",
+      "value": 8,
+      "color": "#d2d2d2",
+      "label": "Biochar",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 8,
+      "particleIconSource": "custom",
+      "returnY": 624.2107694116462,
+      "particleType": "icon",
+      "particleIcon": "/images/iconslibrary/biochar-01.svg"
+    },
+    {
+      "id": "link-7",
+      "source": "farms",
+      "target": "waterways",
+      "value": 17,
+      "color": "#3B82F6",
+      "label": "Clean Water",
+      "animationFrequency": 1,
+      "animationRate": 3,
+      "animationSize": 4,
+      "particleIconSource": "dot"
+    },
+    {
+      "id": "link-1763075365124-p4ys50c8w",
+      "source": "node-1763075273093-thqm5fxhd",
+      "target": "chicken-house",
+      "value": 10,
+      "color": "#EAB308"
+    },
+    {
+      "id": "link-1763075482981-ympk9p60o",
+      "source": "farms",
+      "target": "node-1763075430022-d9ge2ocmd",
+      "value": 10,
+      "color": "#EAB308",
+      "returnY": 753.1800164597994
+    },
+    {
+      "id": "link-1763075488218-pf8e1lu5m",
+      "source": "node-1763075430022-d9ge2ocmd",
+      "target": "chicken-house",
+      "value": 10,
+      "color": "#EAB308"
+    },
+    {
+      "id": "link-1763075607957-22ivldqar",
+      "source": "pyrolysis-unit",
+      "target": "chicken-house",
+      "value": 10,
+      "color": "#d2d2d2",
+      "returnY": 564.2809754950539,
+      "label": "BioChar Bedding",
+      "particleType": "icon",
+      "particleIconSource": "custom",
+      "particleIcon": "/images/iconslibrary/biochar-01.svg",
+      "animationSize": 9
+    },
+    {
+      "id": "link-1763078205790-lca6mdpwo",
+      "source": "processing-plant",
+      "target": "node-1763078168012-sm0xqvor3",
+      "value": 10,
+      "color": "#6B7280"
+    },
+    {
+      "id": "link-1763078209556-9dhdbxcv9",
+      "source": "node-1763078168012-sm0xqvor3",
+      "target": "anaerobic-digester",
+      "value": 10,
+      "color": "#6B7280"
+    }
+  ],
+  "config": {
+    "width": 750,
+    "height": 900,
+    "nodePadding": 20,
+    "nodeWidth": 180,
+    "circularLinkGap": 20
+  }
+}

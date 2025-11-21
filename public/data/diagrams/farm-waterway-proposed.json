@@ -1,0 +1,153 @@
+{
+  "version": "1.0.0",
+  "name": "Farm/Waterway Detail View",
+  "description": "Detailed flow diagram focused on Farm/Waterway component",
+  "nodes": [
+    {
+      "id": "liquid-digestate-input",
+      "name": "Liquid Digestate",
+      "x": 100,
+      "y": 120,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/digestate-liquids.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "decant-liquid-input",
+      "name": "Decant Liquid",
+      "x": 100,
+      "y": 240,
+      "type": "input",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/digestate-liquids.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "diesel-input",
+      "name": "Diesel",
+      "x": 100,
+      "y": 360,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/system-icons/energy/renewable-biofuels-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "fertilizers-input",
+      "name": "Fertilizers",
+      "x": 100,
+      "y": 460,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/fertilizer.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "labor-input",
+      "name": "Labor",
+      "x": 100,
+      "y": 560,
+      "type": "input",
+      "width": 70,
+      "height": 70,
+      "icon": "/images/flow-icons/placeholder.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "farm-waterway",
+      "name": "Farm/Waterway",
+      "x": 350,
+      "y": 340,
+      "type": "component",
+      "width": 140,
+      "height": 140,
+      "icon": "/images/system-icons/components/farm-waterways.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "crops-output",
+      "name": "Crops",
+      "x": 600,
+      "y": 340,
+      "type": "output",
+      "width": 80,
+      "height": 80,
+      "icon": "/images/system-icons/outputs/crops-corn.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "digestate-to-farm",
+      "source": "liquid-digestate-input",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "From Digester (60)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "decant-to-farm",
+      "source": "decant-liquid-input",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "From Pyrolysis (10)",
+      "type": "material",
+      "animated": true
+    },
+    {
+      "id": "diesel-to-farm",
+      "source": "diesel-input",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "Equipment Fuel (20)",
+      "type": "energy",
+      "animated": false
+    },
+    {
+      "id": "fertilizers-to-farm",
+      "source": "fertilizers-input",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "Chemicals (15)",
+      "type": "material",
+      "animated": false
+    },
+    {
+      "id": "labor-to-farm",
+      "source": "labor-input",
+      "target": "farm-waterway",
+      "value": 5,
+      "label": "Operations (15)",
+      "type": "support",
+      "animated": false
+    },
+    {
+      "id": "farm-to-crops",
+      "source": "farm-waterway",
+      "target": "crops-output",
+      "value": 5,
+      "label": "Agricultural Production (95)",
+      "type": "material",
+      "animated": true
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-09",
+    "author": "Biochar System Design",
+    "description": "Detailed view of Farm/Waterway inputs and outputs",
+    "tags": ["farm-waterway", "detail-view", "component-focus"]
+  }
+}

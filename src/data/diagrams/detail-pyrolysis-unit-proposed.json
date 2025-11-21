@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "title": "Pyrolysis Unit - Proposed System (Detailed)",
+    "description": "Detailed view of pyrolysis unit converting poultry litter into biochar, syngas, and bio-oils",
+    "type": "detail",
+    "system": "proposed",
+    "component": "pyrolysis-unit"
+  },
+  "nodes": [
+    {
+      "id": "litter-in",
+      "name": "Used Poultry<br/>Litter",
+      "x": 100,
+      "y": 350,
+      "width": 80,
+      "height": 80,
+      "color": "#92400E",
+      "icon": "/images/iconslibrary/used-poultry-litter-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "pyrolysis-unit-main",
+      "name": "Pyrolysis<br/>Unit",
+      "x": 350,
+      "y": 325,
+      "width": 180,
+      "height": 150,
+      "color": "#DC2626",
+      "icon": "/images/iconslibrary/pyrolysis-unit-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "biochar-out",
+      "name": "Biochar<br/>(Premium Soil)",
+      "x": 650,
+      "y": 200,
+      "width": 80,
+      "height": 80,
+      "color": "#1F2937",
+      "icon": "/images/iconslibrary/biochar-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "syngas-out",
+      "name": "Syngas<br/>(Energy)",
+      "x": 650,
+      "y": 330,
+      "width": 80,
+      "height": 80,
+      "color": "#EF4444",
+      "icon": "/images/iconslibrary/syngas-energy-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "bio-oils-out",
+      "name": "Bio-Oils<br/>(Fuel)",
+      "x": 650,
+      "y": 460,
+      "width": 80,
+      "height": 80,
+      "color": "#F59E0B",
+      "icon": "/images/iconslibrary/bio-oils-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    },
+    {
+      "id": "wood-vinegar-out",
+      "name": "Wood<br/>Vinegar",
+      "x": 650,
+      "y": 590,
+      "width": 80,
+      "height": 80,
+      "color": "#78350F",
+      "icon": "/images/iconslibrary/wood-vinegars-01.svg",
+      "iconOnly": true,
+      "showLabel": true
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "source": "litter-in",
+      "target": "pyrolysis-unit-main",
+      "value": 20,
+      "color": "#92400E",
+      "label": "1000 kg",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 5
+    },
+    {
+      "id": "link-2",
+      "source": "pyrolysis-unit-main",
+      "target": "biochar-out",
+      "value": 14,
+      "color": "#1F2937",
+      "label": "300 kg",
+      "animationFrequency": 2,
+      "animationRate": 5,
+      "animationSize": 5
+    },
+    {
+      "id": "link-3",
+      "source": "pyrolysis-unit-main",
+      "target": "syngas-out",
+      "value": 12,
+      "color": "#EF4444",
+      "label": "400 kg",
+      "animationFrequency": 2,
+      "animationRate": 5,
+      "animationSize": 4
+    },
+    {
+      "id": "link-4",
+      "source": "pyrolysis-unit-main",
+      "target": "bio-oils-out",
+      "value": 10,
+      "color": "#F59E0B",
+      "label": "200 kg",
+      "animationFrequency": 2,
+      "animationRate": 4,
+      "animationSize": 4
+    },
+    {
+      "id": "link-5",
+      "source": "pyrolysis-unit-main",
+      "target": "wood-vinegar-out",
+      "value": 8,
+      "color": "#78350F",
+      "label": "100 L",
+      "animationFrequency": 2,
+      "animationRate": 3,
+      "animationSize": 3
+    }
+  ],
+  "config": {
+    "width": 850,
+    "height": 850,
+    "nodePadding": 20,
+    "nodeWidth": 100,
+    "circularLinkGap": 20
+  }
+}
