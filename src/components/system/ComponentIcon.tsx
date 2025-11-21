@@ -30,7 +30,8 @@ export function ComponentIcon({ id, name, description, keyMetric, isActive = fal
   };
 
   // CO2 icon has built-in label, so it needs special handling
-  const isCO2 = id === 'co2-input' || id === 'co2';
+  // Note: ComponentName type doesn't currently include CO2, so this is always false
+  const isCO2 = false;
   const iconSize = isCO2 ? '2xl' : 'xl';
   const showLabel = !isCO2;
 

@@ -1,10 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import BuilderCanvas from '@/components/builder/BuilderCanvas';
+import { CircularSankeyHomepage } from '@/components/d3/CircularSankeyHomepage';
 import { DiagramData } from '@/types/builder';
 import { DiagramCardProps } from '@/types/homepage';
-import { defaultTheme } from '@/lib/themePresets';
 
 /**
  * DiagramCard Component
@@ -48,12 +47,6 @@ export default function DiagramCard({
 
     loadDiagram();
   }, [card.diagramPath]);
-
-  // Empty handlers for BuilderCanvas (not used in preview mode)
-  const handleNodeClick = () => {};
-  const handleLinkClick = () => {};
-  const handleNodeDrag = () => {};
-  const handleCanvasClick = () => {};
 
   if (isLoading) {
     return (
@@ -152,19 +145,11 @@ export default function DiagramCard({
       </div>
 
       {/* Diagram Canvas */}
-      <div className="relative" style={{ height: `${diagramData.config?.height || 800}px` }}>
-        <BuilderCanvas
-          nodes={diagramData.nodes}
-          links={diagramData.links}
-          mode="preview"
-          selectedItem={null}
-          isDrawingConnection={false}
-          connectionStart={null}
-          theme={defaultTheme}
-          onNodeClick={handleNodeClick}
-          onLinkClick={handleLinkClick}
-          onNodeDrag={handleNodeDrag}
-          onCanvasClick={handleCanvasClick}
+      <div className="relative">
+        <CircularSankeyHomepage
+          diagramData={diagramData as any}
+          height={diagramData.config?.height || 800}
+          enableNavigation={false}
         />
       </div>
 
