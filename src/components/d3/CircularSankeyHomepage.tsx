@@ -126,7 +126,7 @@ export function CircularSankeyHomepage({
     const nodeMap = new Map(diagramData.nodes.map(node => [node.id, node]));
 
     // Generate link path (matching BuilderCanvas logic with circular support)
-    const generateLinkPath = (link: DiagramLink, linkIndex: number): string => {
+    const generateLinkPath = (link: DiagramLink, linkIndex: number, reverse = false): string => {
       const sourceNode = nodeMap.get(link.source);
       const targetNode = nodeMap.get(link.target);
       
@@ -138,7 +138,9 @@ export function CircularSankeyHomepage({
       const ty = targetNode.y + targetNode.height / 2;
 
       // Check if this is a reverse connection (target is left of source)
-      if (tx < sx) {
+      const isReverse = tx < sx;
+      
+      if (isReverse) {
         // Calculate stagger to prevent overlaps - each link gets its own offset
         const stagger = linkIndex * 60; // Offset by 60px for each link
         const gap = 30; // Gap from nodes
@@ -148,6 +150,23 @@ export function CircularSankeyHomepage({
           ? returnY
           : Math.max(sy, ty) + 100 + stagger;
         
+        // If reverse is true, generate path from target to source (for text)
+        if (reverse) {
+          return `
+            M ${tx} ${ty}
+            L ${tx - gap} ${ty}
+            Q ${tx - gap - 20} ${ty} ${tx - gap - 20} ${ty + 20}
+            L ${tx - gap - 20} ${bottomY - 20}
+            Q ${tx - gap - 20} ${bottomY} ${tx - gap} ${bottomY}
+            L ${sx + gap} ${bottomY}
+            Q ${sx + gap + 20} ${bottomY} ${sx + gap + 20} ${bottomY - 20}
+            L ${sx + gap + 20} ${sy + 20}
+            Q ${sx + gap + 20} ${sy} ${sx + gap} ${sy}
+            L ${sx} ${sy}
+          `;
+        }
+        
+        // Normal path from source to target
         return `
           M ${sx} ${sy}
           L ${sx + gap} ${sy}
@@ -170,10 +189,23 @@ export function CircularSankeyHomepage({
     // Create defs for path references (for textPath)
     const defs = g.append('defs');
     diagramData.links.forEach((link, index) => {
+      const sourceNode = nodeMap.get(link.source);
+      const targetNode = nodeMap.get(link.target);
+      const isReverse = targetNode && sourceNode && targetNode.x < sourceNode.x;
+      
+      // Create normal path
       defs.append('path')
         .attr('id', `link-path-${link.id}`)
-        .attr('d', generateLinkPath(link, index))
+        .attr('d', generateLinkPath(link, index, false))
         .attr('fill', 'none');
+      
+      // Create reversed path for text on loopback connections
+      if (isReverse) {
+        defs.append('path')
+          .attr('id', `link-path-${link.id}-text`)
+          .attr('d', generateLinkPath(link, index, true))
+          .attr('fill', 'none');
+      }
     });
 
     // Draw links
@@ -203,8 +235,10 @@ export function CircularSankeyHomepage({
 
       // Add link label following the path
       if (link.label) {
-        // Check if this is a reverse/loopback connection to prevent upside-down text
+        // Check if this is a reverse/loopback connection
         const isReverse = targetNode && sourceNode && targetNode.x < sourceNode.x;
+        // Use reversed path for text on loopback connections to keep text upright
+        const textPathId = isReverse ? `link-path-${link.id}-text` : `link-path-${link.id}`;
         
         linkGroup.append('text')
           .attr('font-size', '12')
@@ -212,10 +246,9 @@ export function CircularSankeyHomepage({
           .attr('font-weight', '600')
           .attr('class', 'pointer-events-none select-none')
           .append('textPath')
-          .attr('href', `#link-path-${link.id}`)
+          .attr('href', `#${textPathId}`)
           .attr('startOffset', '50%')
           .attr('text-anchor', 'middle')
-          .attr('side', isReverse ? 'right' : 'left') // Use 'right' side for reverse paths to keep text upright
           .style('paint-order', 'stroke')
           .style('stroke', 'white')
           .style('stroke-width', '3')
